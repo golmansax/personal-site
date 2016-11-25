@@ -1,11 +1,14 @@
 import React from "react"
-import { Route } from "react-router"
+import { Route, IndexRoute } from "react-router"
 
-import AppContainer from "./AppContainer"
 import HomePage from "./pages/HomePage"
+import AppContainer from './AppContainer'
+
+import "./index.global.css"
+import "./highlight.global.css"
 
 export default (
-  <Route component={ AppContainer }>
-    <Route path='/' component={ HomePage } />
+  <Route path='/' component={ AppContainer }>
+    <IndexRoute component={ HomePage } />
   </Route>
 )
