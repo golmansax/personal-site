@@ -9,6 +9,11 @@ const DefaultHeadMeta = (props, { metadata: { pkg } }) => (
           rel: 'icon',
           href: 'https://www.gravatar.com/avatar/f14bfcfb11c5a367dc8c88bc3dd43189?s=16',
         },
+        {
+          type: 'text/css',
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic',
+        },
       ]}
       meta={ [
         {
