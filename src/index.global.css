@@ -27,11 +27,11 @@ body {
  */
 html {
   min-height: 100%;
-  background: color(var(--colorPrimary) l(99%));
+  background: var(--colorPrimary);
 }
 
 body {
-  color: var(--colorText);
+  color: var(--colorInvertedText);
   font-size: 1rem;
   line-height: 1.5rem;
 
@@ -75,7 +75,6 @@ body {
 /* minimal styling, prefer removing this and use local styles */
 a {
   color: inherit;
-  text-decoration: none;
 
   &:hover {
     text-decoration: underline;
