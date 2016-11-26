@@ -4,6 +4,12 @@ import Helmet from "react-helmet"
 const DefaultHeadMeta = (props, { metadata: { pkg } }) => (
   <div hidden>
     <Helmet
+      link={[
+        {
+          rel: 'icon',
+          href: 'https://www.gravatar.com/avatar/f14bfcfb11c5a367dc8c88bc3dd43189?s=16',
+        },
+      ]}
       meta={ [
         {
           name: "generator", content: `${
