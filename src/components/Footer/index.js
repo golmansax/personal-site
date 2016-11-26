@@ -1,9 +1,9 @@
-import React from "react"
+import React from 'react';
 
-import styles from "./index.css"
+import styles from './index.css';
 
 const Footer = () => (
-  <footer className={ styles.footer }>
+  <footer className={styles.footer}>
     <nav>
       © {new Date().getFullYear()} Holman Gao
       {' '}| <a href='/'>Home</a>
@@ -13,6 +13,6 @@ const Footer = () => (
       {' '}| <a href='https://twitter.com/golmansax' target='_blank'>Twitter</a>
     </nav>
   </footer>
-)
+);
 
-export default Footer
+export default Footer;

@@ -1,5 +1,5 @@
-import React from "react"
-import Page from "../layouts/Page"
+import React from 'react';
+import Page from '../layouts/Page';
 
 const HomePage = () => (
   <Page head={{ title: 'Holman Gao' }}>
@@ -11,6 +11,6 @@ const HomePage = () => (
     Tweet at me
     Want to work together?
   </Page>
-)
+);
 
-export default HomePage
+export default HomePage;

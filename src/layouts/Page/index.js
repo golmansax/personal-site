@@ -1,11 +1,11 @@
-import React, { PropTypes } from "react"
-import Helmet from "react-helmet"
-import warning from "warning"
-import { BodyContainer, joinUri } from "phenomic"
+import React, { PropTypes } from 'react';
+import Helmet from 'react-helmet';
+import warning from 'warning';
+import { BodyContainer, joinUri } from 'phenomic';
 
-import Loading from "../../components/Loading"
+import Loading from '../../components/Loading';
 
-import styles from "./index.css"
+import styles from './index.css';
 
 const Page = (
   {
@@ -20,39 +20,39 @@ const Page = (
   },
   {
     metadata: { pkg },
-  }
+  },
 ) => {
   warning(
-    typeof head.title === "string",
-    `Your page '${ __filename }' needs a title`
-  )
+    typeof head.title === 'string',
+    `Your page '${__filename}' needs a title`,
+  );
 
-  const metaTitle = head.metaTitle ? head.metaTitle : head.title
+  const metaTitle = head.metaTitle ? head.metaTitle : head.title;
 
   const meta = [
-    { property: "og:type", content: "article" },
-    { property: "og:title", content: metaTitle },
+    { property: 'og:type', content: 'article' },
+    { property: 'og:title', content: metaTitle },
     {
-      property: "og:url",
+      property: 'og:url',
       content: joinUri(process.env.PHENOMIC_USER_URL, __url),
     },
-    { property: "og:description", content: head.description },
-    { name: "twitter:card", content: "summary" },
-    { name: "twitter:title", content: metaTitle },
-    { name: "twitter:creator", content: `@${ pkg.twitter }` },
-    { name: "twitter:description", content: head.description },
-    { name: "description", content: head.description },
-  ]
+    { property: 'og:description', content: head.description },
+    { name: 'twitter:card', content: 'summary' },
+    { name: 'twitter:title', content: metaTitle },
+    { name: 'twitter:creator', content: `@${pkg.twitter}` },
+    { name: 'twitter:description', content: head.description },
+    { name: 'description', content: head.description },
+  ];
 
   return (
-    <div className={ styles.page }>
+    <div className={styles.page}>
       <Helmet
-        title={ metaTitle }
-        meta={ meta }
+        title={metaTitle}
+        meta={meta}
       />
-      <div className={ styles.wrapper + " " + styles.pageContent }>
+      <div className={`${styles.wrapper} ${styles.pageContent}`}>
         { header }
-        <div className={ styles.body }>
+        <div className={styles.body}>
           {
             isLoading
             ? <Loading />
@@ -63,8 +63,8 @@ const Page = (
         { footer }
       </div>
     </div>
-  )
-}
+  );
+};
 
 Page.propTypes = {
   children: PropTypes.node,
@@ -75,10 +75,10 @@ Page.propTypes = {
   body: PropTypes.string,
   header: PropTypes.element,
   footer: PropTypes.element,
-}
+};
 
 Page.contextTypes = {
   metadata: PropTypes.object.isRequired,
-}
+};
 
-export default Page
+export default Page;
