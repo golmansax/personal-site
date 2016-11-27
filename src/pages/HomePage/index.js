@@ -17,6 +17,7 @@ const HomePage = () => (
         <li>BoostMySchool</li>
         <li>BookBooster</li>
         <li>Thum.io</li>
+        <li>Living in New York, NY</li>
       </ul>
       <h4>Want to see what I built?</h4>
       <p>Check out my portfolio</p>
