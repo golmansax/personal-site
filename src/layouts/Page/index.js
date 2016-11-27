@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react';
 import Helmet from 'react-helmet';
+import classnames from 'classnames';
 import warning from 'warning';
 import { joinUri } from 'phenomic';
 
@@ -11,6 +12,7 @@ import styles from './index.css';
 
 const Page = (
   {
+    className,
     __filename,
     __url,
     head,
@@ -50,7 +52,7 @@ const Page = (
         meta={meta}
       />
       <Header />
-      <div className={styles.page}>
+      <div className={classnames({ [styles.page]: true, [className]: className })}>
         {children}
       </div>
       <Footer />

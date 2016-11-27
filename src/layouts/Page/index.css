@@ -6,26 +6,20 @@
 
 .page {
   flex: 1;
-  width: 100%;
-  max-width: var(--maxWidth);
-  background: color(var(--colorPrimary) l(99%));
-  color: var(--colorText);
   display: flex;
   align-items: stretch;
   flex-direction: column;
+  width: 100%;
+  max-width: var(--maxWidth);
   margin: 0 auto;
-  border-radius: 3px;
 
   & a {
     color: var(--colorPrimary);
     transition: all 0.2s;
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
 
     &:hover {
       opacity: 1;
       color: color(var(--colorPrimary) l(- 5%));
-      border-bottom-color: var(--colorPrimary);
     }
   }
 

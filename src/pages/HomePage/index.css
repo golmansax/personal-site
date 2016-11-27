@@ -1,0 +1,23 @@
+.container {
+  flex-direction: row;
+}
+
+.column {
+  flex: 1;
+  padding: 0.5vr;
+}
+
+.leftColumn {
+  composes: column;
+  text-align: center;
+}
+
+.rightColumn {
+  composes: column;
+  background: color(var(--colorPrimary) l(99%));
+  color: var(--colorText);
+}
+
+.portrait {
+  width: 100%;
+}
