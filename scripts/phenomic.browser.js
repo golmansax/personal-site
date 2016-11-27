@@ -4,9 +4,9 @@ import 'react-hot-loader/patch';
 import 'whatwg-fetch';
 import phenomicClient from 'phenomic/lib/client';
 
-import metadata from '../src/metadata.js';
-import routes from '../src/routes.js';
-import store from '../src/store.js';
+import metadata from '../src/metadata';
+import routes from '../src/routes';
+import store from '../src/store';
 
 phenomicClient({ metadata, routes, store });
 
@@ -14,12 +14,12 @@ phenomicClient({ metadata, routes, store });
 if (module.hot) {
   // hot load app
   module.hot.accept(
-    ['../src/metadata.js', '../src/routes.js', '../src/store.js'],
+    ['../src/metadata', '../src/routes', '../src/store'],
     // webpack 1
     () => phenomicClient({
-      metadata: require('../src/metadata.js').default,
-      routes: require('../src/routes.js').default,
-      store: require('../src/store.js').default,
+      metadata: require('../src/metadata').default,
+      routes: require('../src/routes').default,
+      store: require('../src/store').default,
     }),
     // webpack 2
     /*
