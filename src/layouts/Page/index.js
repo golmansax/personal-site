@@ -62,6 +62,7 @@ const Page = (
 
 Page.propTypes = {
   children: PropTypes.node,
+  className: PropTypes.string,
   __filename: PropTypes.string,
   __url: PropTypes.string,
   head: PropTypes.object.isRequired,
