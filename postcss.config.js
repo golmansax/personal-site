@@ -1,12 +1,11 @@
 module.exports = (config) => [
   require('stylelint')(),
-  require('postcss-lh')({ rhythmUnit: 'vr' }),
   require('postcss-cssnext')({
     browsers: 'last 2 versions',
     features: {
       customProperties: {
         variables: {
-          maxWidth: '60rem',
+          maxWidth: '40vr',
           colorPrimaryDark: '#005139',
           colorPrimary: '#198565',
           colorSecondaryDark: '#22846C',
@@ -20,6 +19,7 @@ module.exports = (config) => [
       },
     },
   }),
+  require('postcss-lh')({ rhythmUnit: 'vr' }),
   require('postcss-reporter')(),
   ...!config.production ? [
     require('postcss-browser-reporter')(),

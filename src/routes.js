@@ -5,10 +5,9 @@ import './index.global.css';
 import './highlight.global.css';
 
 import HomePage from './pages/HomePage';
-import AppContainer from './AppContainer';
 
 export default (
-  <Route path='/' component={AppContainer}>
+  <Route path='/'>
     <IndexRoute component={HomePage} />
   </Route>
 );

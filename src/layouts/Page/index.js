@@ -1,21 +1,19 @@
 import React, { PropTypes } from 'react';
 import Helmet from 'react-helmet';
 import warning from 'warning';
-import { BodyContainer, joinUri } from 'phenomic';
+import { joinUri } from 'phenomic';
 
-import Loading from '../../components/Loading';
+import DefaultHeadMeta from '../../components/DefaultHeadMeta';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 
 import styles from './index.css';
 
 const Page = (
   {
-    isLoading,
     __filename,
     __url,
     head,
-    body,
-    header,
-    footer,
     children,
   },
   {
@@ -45,36 +43,26 @@ const Page = (
   ];
 
   return (
-    <div className={styles.page}>
+    <div className={styles.pageContainer}>
+      <DefaultHeadMeta />
       <Helmet
         title={metaTitle}
         meta={meta}
       />
-      <div className={`${styles.wrapper} ${styles.pageContent}`}>
-        { header }
-        <div className={styles.body}>
-          {
-            isLoading
-            ? <Loading />
-            : <BodyContainer>{ body }</BodyContainer>
-          }
-        </div>
-        { children }
-        { footer }
+      <Header />
+      <div className={styles.page}>
+        {children}
       </div>
+      <Footer />
     </div>
   );
 };
 
 Page.propTypes = {
   children: PropTypes.node,
-  isLoading: PropTypes.bool,
   __filename: PropTypes.string,
   __url: PropTypes.string,
   head: PropTypes.object.isRequired,
-  body: PropTypes.string,
-  header: PropTypes.element,
-  footer: PropTypes.element,
 };
 
 Page.contextTypes = {

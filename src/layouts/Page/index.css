@@ -1,26 +1,21 @@
-.page {
+.pageContainer {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
+.page {
+  flex: 1;
   width: 100%;
   max-width: var(--maxWidth);
-  padding: 1rem 0.75rem;
-}
+  background: color(var(--colorPrimary) l(99%));
+  color: var(--colorText);
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  margin: 0 auto;
+  border-radius: 3px;
 
-.cta {
-  margin-top: 2rem;
-}
-
-.pageContent {
-  margin: 1rem 0;
-}
-
-.body {
   & a {
     color: var(--colorPrimary);
     transition: all 0.2s;
