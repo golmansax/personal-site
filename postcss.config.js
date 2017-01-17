@@ -3,9 +3,20 @@ module.exports = (config) => [
   require('postcss-cssnext')({
     browsers: 'last 2 versions',
     features: {
+      customMedia: {
+        extensions: {
+            '--phone-down': '(max-width: 767px)',
+            '--tablet-up': '(min-width: 768px)',
+            '--tablet-down': '(max-width: 991px)',
+            '--desktop-up': '(min-width: 992px)',
+        }
+      },
+
       customProperties: {
         variables: {
           maxWidth: '30vr',
+
+          // Colors
           colorPrimaryDark: '#005139',
           colorPrimary: '#198565',
           colorSecondaryDark: '#22846C',

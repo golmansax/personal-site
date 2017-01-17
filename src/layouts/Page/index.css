@@ -1,5 +1,6 @@
 .pageContainer {
-  min-height: 100vh;
+  /* min-height: 100vh; */
+
   display: flex;
   flex-direction: column;
 }
@@ -10,8 +11,9 @@
   align-items: stretch;
   flex-direction: column;
   width: 100%;
-  max-width: var(--maxWidth);
   margin: 0 auto;
+
+  /* max-width: var(--maxWidth); */
 
   & a {
     color: var(--colorPrimary);
