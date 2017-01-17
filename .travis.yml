@@ -12,4 +12,4 @@ install:
 - npm prune
 - npm install
 after_success:
-- "./scripts/deploy_gh_pages.sh"
+- "./scripts/deploy-gh-pages.sh"
