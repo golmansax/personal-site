@@ -64,11 +64,11 @@ const HomePage = () => (
       </h1>
     </header>
     <div className={styles.contentContainer}>
-      <div className={styles.rightColumn}>
-        <HomePageContent className={styles.tabletContent} />
-      </div>
       <div className={styles.leftColumn}>
         &nbsp;
+      </div>
+      <div className={styles.rightColumn}>
+        <HomePageContent className={styles.tabletContent} />
       </div>
     </div>
     <HomePageContent className={styles.mobileContent} />

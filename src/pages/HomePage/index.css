@@ -12,23 +12,26 @@
   align-items: center;
   height: 100%;
   max-width: 100%;
-  width: var(--maxWidth);
+  width: var(--widthMax);
 }
 
 .contentContainer {
   flex: 1;
-  background: url('./background.jpg') no-repeat;
-  background-size: cover;
 }
 
 .column {
-  padding: 0.5vr;
   display: flex;
 }
 
 .leftColumn,
 .rightColumn {
   composes: column;
+}
+
+.leftColumn {
+  background: url('./background.jpg') no-repeat;
+  background-size: cover;
+  min-height: 10vr;
 }
 
 .tabletHeader {
@@ -41,8 +44,8 @@
 }
 
 .footer {
-  padding: 0.5vr;
   width: 100%;
+  padding: 0.5vr;
 }
 
 .mobileContent {
@@ -89,5 +92,17 @@
     background: color(var(--colorPrimary) l(98%) alpha(0.8));
     color: var(--colorText);
     padding: 1vr;
+  }
+}
+
+@media (--large-desktop-up) {
+  .header,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .leftColumn {
+    flex: 2;
   }
 }

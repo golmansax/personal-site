@@ -9,12 +9,14 @@ module.exports = (config) => [
           '--tablet-up': '(min-width: 768px)',
           '--tablet-down': '(max-width: 991px)',
           '--desktop-up': '(min-width: 992px)',
+          '--large-desktop-down': '(min-width: 1199px)',
+          '--large-desktop-up': '(min-width: 1200px)',
         },
       },
 
       customProperties: {
         variables: {
-          maxWidth: '50vr',
+          widthMax: '1200px',
 
           // Colors
           colorPrimaryDark: '#005139',
