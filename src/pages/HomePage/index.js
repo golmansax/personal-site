@@ -77,15 +77,15 @@ const HomePage = () => (
     <footer className={styles.footer}>
       <nav>
         © {new Date().getFullYear()} Holman Gao
-        {' '}| <a href='/'>Home</a>
-        {' '}| <a href={PORTFOLIO_PATH}>Portfolio</a>
-        {' '}| <a href='/resume'>Resume</a>
-        {' '}| <a href='/blog'>Blog</a>
-        {' '}|{' '}
+        {' '}&bull; <a href='/'>Home</a>
+        {' '}&bull; <a href={PORTFOLIO_PATH}>Portfolio</a>
+        {' '}&bull; <a href='/resume'>Resume</a>
+        {' '}&bull; <a href='/blog'>Blog</a>
+        {' '}&bull;{' '}
         <a href='https://github.com/golmansax' target='_blank' rel='noopener noreferrer'>
           Github
         </a>
-        {' '}|{' '}
+        {' '}&bull;{' '}
         <a href='https://twitter.com/golmansax' target='_blank' rel='noopener noreferrer'>
           Twitter
         </a>
