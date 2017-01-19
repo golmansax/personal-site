@@ -18,6 +18,8 @@ const UP_TO = [
   },
 ];
 
+const PORTFOLIO_PATH = '/';
+
 const HomePageContent = ({ className }) => (
   <div className={className}>
     <h4>What am I up to?</h4>
@@ -31,7 +33,7 @@ const HomePageContent = ({ className }) => (
       ))}
     </ul>
     <h4>Want to see what I&rsquo;ve built?</h4>
-    <p>Check out my work on <a href='/portfolio'>my portfolio</a>.</p>
+    <p>Check out my work on <a href={PORTFOLIO_PATH}>my portfolio</a>.</p>
     <h4>
       Interested in working together (freelancing or co-founder)? Just want to say hello?
     </h4>
@@ -76,9 +78,9 @@ const HomePage = () => (
       <nav>
         © {new Date().getFullYear()} Holman Gao
         {' '}| <a href='/'>Home</a>
-        {' '}| <a href='https://golmansax.com/portfolio'>Portfolio</a>
+        {' '}| <a href={PORTFOLIO_PATH}>Portfolio</a>
         {' '}| <a href='/resume'>Resume</a>
-        {' '}| <a href='https://golmansax.com/blog'>Blog</a>
+        {' '}| <a href='/blog'>Blog</a>
         {' '}|{' '}
         <a href='https://github.com/golmansax' target='_blank' rel='noopener noreferrer'>
           Github
