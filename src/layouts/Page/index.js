@@ -18,6 +18,7 @@ const Page = (
     head,
     children,
     showHeader,
+    showFooter,
   },
   {
     metadata: { pkg },
@@ -56,7 +57,7 @@ const Page = (
       <div className={classnames({ [styles.page]: true, [className]: className })}>
         {children}
       </div>
-      <Footer />
+      {showFooter && <Footer />}
     </div>
   );
 };
@@ -68,6 +69,7 @@ Page.propTypes = {
   __url: PropTypes.string,
   head: PropTypes.object.isRequired,
   showHeader: PropTypes.bool.isRequired,
+  showFooter: PropTypes.bool.isRequired,
 };
 
 Page.contextTypes = {
@@ -76,6 +78,7 @@ Page.contextTypes = {
 
 Page.defaultProps = {
   showHeader: true,
+  showFooter: true,
 };
 
 export default Page;

@@ -5,20 +5,21 @@ module.exports = (config) => [
     features: {
       customMedia: {
         extensions: {
-            '--phone-down': '(max-width: 767px)',
-            '--tablet-up': '(min-width: 768px)',
-            '--tablet-down': '(max-width: 991px)',
-            '--desktop-up': '(min-width: 992px)',
-        }
+          '--phone-down': '(max-width: 767px)',
+          '--tablet-up': '(min-width: 768px)',
+          '--tablet-down': '(max-width: 991px)',
+          '--desktop-up': '(min-width: 992px)',
+        },
       },
 
       customProperties: {
         variables: {
-          maxWidth: '30vr',
+          maxWidth: '50vr',
 
           // Colors
           colorPrimaryDark: '#005139',
           colorPrimary: '#198565',
+          colorPrimaryLight: '#55AA90',
           colorSecondaryDark: '#22846C',
           colorSecondary: '#46BE77',
           colorNeutralDark: '#111',
