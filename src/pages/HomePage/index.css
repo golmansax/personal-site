@@ -31,7 +31,7 @@
 .leftColumn {
   background: url('./background.jpg') no-repeat;
   background-size: cover;
-  min-height: 10vr;
+  padding-bottom: 61.8%; /* Roughly 1089 / 1762 (aspect-ratio of background.jpg) */
 }
 
 .tabletHeader {
@@ -93,6 +93,12 @@
     color: var(--colorText);
     padding: 1vr;
   }
+
+  .leftColumn {
+    background-position: -3rem;
+    min-height: 10vr;
+    padding-bottom: 0;
+  }
 }
 
 @media (--large-desktop-up) {
@@ -104,5 +110,6 @@
 
   .leftColumn {
     flex: 2;
+    background-position: center;
   }
 }
