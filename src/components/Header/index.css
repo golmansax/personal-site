@@ -1,3 +1,21 @@
 .header {
-  height: 3vr;
+  width: 100%;
+  padding: 0 0.5vr;
+}
+
+.heading {
+  margin: 1vr 0;
+}
+
+.subHeading {
+  font-weight: 400;
+  display: block;
+  font-size: 70%;
+}
+
+@media (--tablet-up) {
+  .subHeading {
+    display: inline-block;
+    margin-left: 0.5vr;
+  }
 }

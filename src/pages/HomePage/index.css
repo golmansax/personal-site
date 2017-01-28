@@ -1,13 +1,3 @@
-.heading {
-  margin: 1vr 0;
-}
-
-.subHeading {
-  font-weight: 400;
-  display: block;
-  font-size: 70%;
-}
-
 .container {
   align-items: center;
   height: 100%;
@@ -36,11 +26,6 @@
 
 .tabletHeader {
   display: none;
-}
-
-.header {
-  width: 100%;
-  padding: 0 0.5vr;
 }
 
 .footer {
@@ -123,11 +108,6 @@ a.upToLink {
 
   .phoneHeader {
     display: none;
-  }
-
-  .subHeading {
-    display: inline-block;
-    margin-left: 0.5vr;
   }
 
   .mobileContent {

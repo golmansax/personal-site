@@ -67,17 +67,8 @@ const HomePage = () => (
   <Page
     head={{ title: 'Holman Gao – entrepreneur | developer | in New York' }}
     className={styles.container}
-    showHeader={false}
     showFooter={false}
     >
-    <header className={styles.header}>
-      <h1 className={styles.heading}>
-        Holman Gao
-        <small className={styles.subHeading}>
-          entrepreneur | freelance developer | in New York, NY
-        </small>
-      </h1>
-    </header>
     <div className={styles.contentContainer}>
       <div className={styles.leftColumn}>
         &nbsp;
