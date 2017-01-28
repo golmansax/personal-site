@@ -66,8 +66,6 @@ HomePageContent.propTypes = {
 const HomePage = () => (
   <Page
     head={{ title: 'Holman Gao – entrepreneur | developer | in New York' }}
-    className={styles.container}
-    showFooter={false}
     >
     <div className={styles.contentContainer}>
       <div className={styles.leftColumn}>
@@ -78,23 +76,6 @@ const HomePage = () => (
       </div>
     </div>
     <HomePageContent className={styles.mobileContent} />
-    <footer className={styles.footer}>
-      <nav>
-        © {new Date().getFullYear()} Holman Gao
-        {' '}&bull; <a href='/'>Home</a>
-        {' '}&bull; <a href={PORTFOLIO_PATH}>Portfolio</a>
-        {' '}&bull; <a href='/resume'>Resume</a>
-        {' '}&bull; <a href='/blog'>Blog</a>
-        {' '}&bull;{' '}
-        <a href='https://github.com/golmansax' target='_blank' rel='noopener noreferrer'>
-          Github
-        </a>
-        {' '}&bull;{' '}
-        <a href='https://twitter.com/golmansax' target='_blank' rel='noopener noreferrer'>
-          Twitter
-        </a>
-      </nav>
-    </footer>
   </Page>
 );
 

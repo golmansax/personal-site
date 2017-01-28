@@ -19,3 +19,10 @@
     margin-left: 0.5vr;
   }
 }
+
+@media (--large-desktop-up) {
+  .header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
