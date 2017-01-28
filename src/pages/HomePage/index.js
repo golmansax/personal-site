@@ -65,7 +65,7 @@ HomePageContent.propTypes = {
 
 const HomePage = () => (
   <Page
-    head={{ title: 'Holman Gao' }}
+    head={{ title: 'Holman Gao – entrepreneur | developer | in New York' }}
     className={styles.container}
     showHeader={false}
     showFooter={false}
