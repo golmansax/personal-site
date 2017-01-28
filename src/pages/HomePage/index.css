@@ -60,6 +60,44 @@
   width: 100%;
 }
 
+/* Unfortunately need <a> to override other styles */
+a.upToLink {
+  display: inline-block;
+  padding: 0.25vr 0.5vr;
+  margin-bottom: 0.25vr;
+  border: 1px solid transparent;
+  border-radius: var(--radiusDefault);
+  text-decoration: none;
+
+  &.boostMySchool {
+    background-color: #5f867f;
+    color: var(--colorInvertedText);
+
+    &:hover {
+      background-color: #437168;
+      color: var(--colorInvertedText);
+    }
+  }
+
+  &.thumIo {
+    border-color: #1a4670;
+    color: #1a4670;
+
+    &:hover {
+      background-color: #ebf4fc;
+    }
+  }
+
+  &.bookBooster {
+    background-color: #1b2860;
+    color: #fee9f2;
+
+    &:hover {
+      color: #ff197c;
+    }
+  }
+}
+
 @media (--tablet-up) {
   .contentContainer {
     display: flex;

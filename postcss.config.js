@@ -18,6 +18,8 @@ module.exports = (config) => [
         variables: {
           widthMax: '1200px',
 
+          radiusDefault: '2px',
+
           // Colors
           colorPrimaryDark: '#005139',
           colorPrimary: '#198565',

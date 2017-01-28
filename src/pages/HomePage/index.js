@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react';
+import classnames from 'classnames';
 import Page from '../../layouts/Page';
 
 import styles from './index.css';
@@ -7,14 +8,17 @@ const UP_TO = [
   {
     text: 'BoostMySchool',
     url: 'https://www.boostmyschool.com',
+    slug: 'boostMySchool',
   },
   {
     text: 'Thum.io',
     url: 'https://www.thum.io',
+    slug: 'thumIo',
   },
   {
     text: 'BookBooster',
     url: 'https://bayarea.bookbooster.org',
+    slug: 'bookBooster',
   },
 ];
 
@@ -23,15 +27,20 @@ const PORTFOLIO_PATH = '/';
 const HomePageContent = ({ className }) => (
   <div className={className}>
     <h4>What am I up to?</h4>
-    <ul>
-      {UP_TO.map(({ url, text }) => (
-        <li key={url}>
-          <a href={url} target='_blank' rel='noopener noreferrer'>
+    <div>
+      {UP_TO.map(({ slug, url, text }) => (
+        <div key={url}>
+          <a
+            href={url}
+            target='_blank'
+            rel='noopener noreferrer'
+            className={classnames([styles.upToLink, styles[slug]])}
+            >
             {text}
           </a>
-        </li>
+        </div>
       ))}
-    </ul>
+    </div>
     <h4>Want to see what I&rsquo;ve built?</h4>
     <p>Check out my work on <a href={PORTFOLIO_PATH}>my portfolio</a>.</p>
     <h4>
