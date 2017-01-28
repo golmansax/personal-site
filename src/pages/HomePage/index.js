@@ -26,32 +26,36 @@ const PORTFOLIO_PATH = '/';
 
 const HomePageContent = ({ className }) => (
   <div className={className}>
-    <h4>What am I up to?</h4>
-    <div>
-      {UP_TO.map(({ slug, url, text }) => (
-        <div key={url}>
-          <a
-            href={url}
-            target='_blank'
-            rel='noopener noreferrer'
-            className={classnames([styles.upToLink, styles[slug]])}
-            >
-            {text}
-          </a>
-        </div>
-      ))}
+    <div className={styles.contentSection}>
+      <h4 className={styles.contentSectionHeading}>Currently working on...</h4>
+      <div>
+        {UP_TO.map(({ slug, url, text }) => (
+          <div key={url}>
+            <a
+              href={url}
+              target='_blank'
+              rel='noopener noreferrer'
+              className={classnames([styles.upToLink, styles[slug]])}
+              >
+              {text}
+            </a>
+          </div>
+        ))}
+      </div>
     </div>
-    <h4>Want to see what I&rsquo;ve built?</h4>
-    <p>Check out my work on <a href={PORTFOLIO_PATH}>my portfolio</a>.</p>
-    <h4>
-      Interested in working together (freelancing or co-founder)? Just want to say hello?
-    </h4>
-    <p>
-      Reach out via <a href='mailto:holman@golmansax.com'>email</a>{' '}
-      or <a href='https://twitter.com/golmansax' target='_blank' rel='noopener noreferrer'>
-        Twitter
-      </a>. I read every message, I promise!
-    </p>
+    <div className={styles.contentSection}>
+      <h4 className={styles.contentSectionHeading}>Want to see what I&rsquo;ve built?</h4>
+      <div>Check out my work on <a href={PORTFOLIO_PATH}>my portfolio</a>.</div>
+    </div>
+    <div className={styles.contentSection}>
+      <h4 className={styles.contentSectionHeading}>Contact</h4>
+      <div>
+        Reach out via <a href='mailto:holman@golmansax.com'>email</a>{' '}
+        or <a href='https://twitter.com/golmansax' target='_blank' rel='noopener noreferrer'>
+          Twitter
+        </a>. I read every message, I promise!
+      </div>
+    </div>
   </div>
 );
 

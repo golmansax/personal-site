@@ -49,7 +49,8 @@
 }
 
 .mobileContent {
-  padding: 0.5vr;
+  padding: 1vr 0.5vr;
+  width: 100%;
 }
 
 .tabletContent {
@@ -58,6 +59,14 @@
 
 .contentContainer {
   width: 100%;
+}
+
+.contentSection {
+  margin-bottom: 1.5vr;
+}
+
+.contentSectionHeading {
+  margin: 0 0 0.25vr;
 }
 
 /* Unfortunately need <a> to override other styles */
@@ -93,7 +102,7 @@ a.upToLink {
     color: #fee9f2;
 
     &:hover {
-      color: #ff197c;
+      color: #f9c4da;
     }
   }
 }
