@@ -1,0 +1,13 @@
+.pdfContainer {
+  position: relative;
+  padding-bottom: 75%;
+  margin-bottom: 1vr;
+}
+
+.pdf {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
