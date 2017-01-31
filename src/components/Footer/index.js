@@ -15,7 +15,7 @@ const Footer = () => (
       {' '}&bull; <a href='/blog'><FormattedMessage id='footer.blog' /></a>
       {' '}&bull;{' '}
       <a href='https://github.com/golmansax' target='_blank' rel='noopener noreferrer'>
-        Github
+        GitHub
       </a>
       {' '}&bull;{' '}
       <a href='https://twitter.com/golmansax' target='_blank' rel='noopener noreferrer'>
