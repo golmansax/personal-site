@@ -1,9 +1,11 @@
 import React, { PropTypes } from 'react';
 import Helmet from 'react-helmet';
+import { IntlProvider } from 'react-intl';
 import classnames from 'classnames';
 import warning from 'warning';
 import { joinUri } from 'phenomic';
 
+import { getIntl, getLocale } from '../../utils/intl';
 import DefaultHeadMeta from '../../components/DefaultHeadMeta';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
@@ -22,6 +24,7 @@ const Page = (
   },
   {
     metadata: { pkg },
+    location,
   },
 ) => {
   warning(
@@ -46,19 +49,24 @@ const Page = (
     { name: 'description', content: head.description },
   ];
 
+  const locale = getLocale(location.pathname);
+  const intl = getIntl(locale);
+
   return (
-    <div className={styles.pageContainer}>
-      <DefaultHeadMeta />
-      <Helmet
-        title={metaTitle}
-        meta={meta}
-      />
-      {showHeader && <Header />}
-      <div className={classnames({ [styles.page]: true, [className]: className })}>
-        {children}
+    <IntlProvider {...intl}>
+      <div className={styles.pageContainer}>
+        <DefaultHeadMeta />
+        <Helmet
+          title={metaTitle}
+          meta={meta}
+        />
+        {showHeader && <Header />}
+        <div className={classnames({ [styles.page]: true, [className]: className })}>
+          {children}
+        </div>
+        {showFooter && <Footer />}
       </div>
-      {showFooter && <Footer />}
-    </div>
+    </IntlProvider>
   );
 };
 
@@ -74,6 +82,7 @@ Page.propTypes = {
 
 Page.contextTypes = {
   metadata: PropTypes.object.isRequired,
+  location: PropTypes.object.isRequired,
 };
 
 Page.defaultProps = {

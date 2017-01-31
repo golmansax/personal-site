@@ -10,6 +10,7 @@ import ResumePage from './pages/ResumePage';
 export default (
   <Route path='/'>
     <IndexRoute component={HomePage} />
+    <Route path='es' component={HomePage} />
     <Route path='resume' component={ResumePage} />
   </Route>
 );

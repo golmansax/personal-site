@@ -1,4 +1,5 @@
 import React from 'react';
+import { FormattedMessage } from 'react-intl';
 
 import styles from './index.css';
 
@@ -7,9 +8,9 @@ const Header = () => (
     <h1 className={styles.heading}>
       Holman Gao
       <small className={styles.subHeading}>
-        entrepreneur |{' '}
-        freelance developer |{' '}
-        <span className={styles.chunk}>in New York, NY</span>
+        <FormattedMessage id='header.job1' /> |{' '}
+        <FormattedMessage id='header.job2' /> |{' '}
+        <span className={styles.chunk}><FormattedMessage id='header.location' /></span>
       </small>
     </h1>
   </header>

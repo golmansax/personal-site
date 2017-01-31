@@ -9,7 +9,7 @@ const URL = 'https://docs.google.com/viewer?' +
 
 const ResumePage = () => (
   <Page
-    head={{ title: 'Holman Gao – entrepreneur | developer | in New York' }}
+    head={{ title: 'Resume | Holman Gao' }}
     >
     <h2>Resume</h2>
     <div className={styles.pdfContainer}>

@@ -207,6 +207,11 @@ export default (config = {}) => {
           test: /\.svg$/,
           loader: 'raw-loader',
         },
+
+        {
+          test: /\.yml$/,
+          loaders: ['json-loader', 'yaml-loader'],
+        },
       ],
     },
 
