@@ -7,16 +7,22 @@
   margin: 1vr 0;
 }
 
+.chunk {
+  display: inline-block;
+}
+
 .subHeading {
   font-weight: 400;
   display: block;
   font-size: 65%;
+  margin-top: 0.5vr;
 }
 
 @media (--tablet-up) {
   .subHeading {
     display: inline-block;
     margin-left: 0.5vr;
+    margin-top: 0;
   }
 }
 

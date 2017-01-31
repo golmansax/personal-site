@@ -7,7 +7,9 @@ const Header = () => (
     <h1 className={styles.heading}>
       Holman Gao
       <small className={styles.subHeading}>
-        entrepreneur | freelance developer | in New York, NY
+        entrepreneur |{' '}
+        freelance developer |{' '}
+        <span className={styles.chunk}>in New York, NY</span>
       </small>
     </h1>
   </header>
