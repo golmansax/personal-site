@@ -12,7 +12,7 @@ const DefaultHeadMeta = (props, { metadata: { pkg } }) => (
         {
           type: 'text/css',
           rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic',
+          href: 'https://fonts.googleapis.com/css?family=Libre+Franklin:400,700,400italic',
         },
       ]}
       meta={[
