@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "personal-site",
-  "homepage": "https://golmansax.com/personal-site",
+  "homepage": "https://golmansax.com/",
   "twitter": "golmansax",
   "repository": "https://github.com/golmansax/personal-site.git",
   "scripts": {
@@ -15,7 +15,7 @@
   },
   "phenomic": {
     "assets": false,
-    "CNAME": false
+    "CNAME": true
   },
   "#babel": "webpack-(development|production) are useful for webpack 2, otherwise use development|production",
   "babel": {
