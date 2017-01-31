@@ -11,6 +11,7 @@ export default (
   <Route path='/'>
     <IndexRoute component={HomePage} />
     <Route path='es' component={HomePage} />
+    <Route path='zh' component={HomePage} />
     <Route path='resume' component={ResumePage} />
   </Route>
 );

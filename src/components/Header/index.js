@@ -6,7 +6,7 @@ import styles from './index.css';
 const Header = () => (
   <header className={styles.header}>
     <h1 className={styles.heading}>
-      Holman Gao
+      <FormattedMessage id='header.name' />
       <small className={styles.subHeading}>
         <FormattedMessage id='header.job1' /> |{' '}
         <FormattedMessage id='header.job2' /> |{' '}

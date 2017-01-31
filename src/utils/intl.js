@@ -1,21 +1,24 @@
 import { addLocaleData } from 'react-intl';
 import __intlEN from 'react-intl/locale-data/en';
 import __intlES from 'react-intl/locale-data/es';
+import __intlZH from 'react-intl/locale-data/zh';
 import flatten from 'flat';
 
 // Get our translations files
 import localeEN from '../translations/en.yml';
 import localeES from '../translations/es.yml';
+import localeZH from '../translations/zh.yml';
 
-// Load 'en' and 'es' utils
 addLocaleData(__intlEN);
 addLocaleData(__intlES);
+addLocaleData(__intlZH);
 
-const locales = ['es', 'en'];
+const locales = ['es', 'en', 'zh'];
 const defaultLocale = 'en';
 const messages = {
   en: flatten(localeEN),
   es: flatten(localeES),
+  zh: flatten(localeZH),
 };
 
 export function getLocale(url) {
