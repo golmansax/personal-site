@@ -10,7 +10,7 @@
 .subHeading {
   font-weight: 400;
   display: block;
-  font-size: 70%;
+  font-size: 65%;
 }
 
 @media (--tablet-up) {

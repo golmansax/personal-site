@@ -116,7 +116,7 @@ a.upToLink {
   }
 }
 
-@media (--large-desktop-up) {
+@media (--desktop-up) {
   .leftColumn {
     flex: 2;
     background-position: center;
