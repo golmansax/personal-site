@@ -5,19 +5,19 @@
   width: var(--widthMax);
   margin: 0 auto;
 
-  & a {
-    color: var(--colorPrimary);
-    transition: all 0.2s;
-
-    &:hover {
-      opacity: 1;
-      color: color(var(--colorPrimary) l(- 5%));
-    }
-  }
-
   /* handy for content */
   & img {
     max-width: 100%;
+  }
+}
+
+a {
+  color: var(--colorPrimary);
+  transition: all 0.2s;
+
+  &:hover {
+    opacity: 1;
+    color: color(var(--colorPrimary) l(- 5%));
   }
 }
 
