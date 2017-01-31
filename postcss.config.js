@@ -16,7 +16,9 @@ module.exports = (config) => [
 
       customProperties: {
         variables: {
-          widthMax: '1200px',
+          // This should be slightly smaller than the large-desktop, or else we lose
+          // padding at 1200px
+          widthMax: '1150px',
 
           radiusDefault: '2px',
 
