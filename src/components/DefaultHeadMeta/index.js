@@ -1,5 +1,4 @@
 import React, { PropTypes } from 'react';
-import { injectIntl } from 'react-intl';
 import Helmet from 'react-helmet';
 
 const DefaultHeadMeta = (props, { metadata: { pkg } }) => (
@@ -15,11 +14,6 @@ const DefaultHeadMeta = (props, { metadata: { pkg } }) => (
           rel: 'stylesheet',
           href: 'https://fonts.googleapis.com/css?family=Libre+Franklin:400,700',
         },
-        props.intl.locale === 'cn' ? {
-          type: 'text/css',
-          rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css?family=Noto+Sans+CJK+SC:400,700',
-        } : null,
       ].filter((link) => link)}
       meta={[
         {
@@ -55,4 +49,4 @@ DefaultHeadMeta.contextTypes = {
   metadata: PropTypes.object.isRequired,
 };
 
-export default injectIntl(DefaultHeadMeta);
+export default DefaultHeadMeta;
