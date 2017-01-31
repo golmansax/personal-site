@@ -1,3 +1,6 @@
+contact:
+  twitter: 推特
+
 header:
   name: 高鸿鸣
   job1: 企业家
@@ -5,7 +8,13 @@ header:
   location: 在纽约
 
 footer:
+  home: 首页
+  blog: 博客
+  portfolio: 作品集
   languages: '我的语文：'
   en: 英语
   es: 西班牙语
   zh: 汉语
+
+resume:
+  resume: 简历

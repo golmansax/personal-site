@@ -1,3 +1,6 @@
+contact:
+  twitter: Twitter
+
 header:
   name: Holman Gao
   job1: empresario
@@ -5,7 +8,13 @@ header:
   location: en Nueva York
 
 footer:
+  home: Portada
+  blog: Blog
+  portfolio: Portafolio
   languages: 'Mis idiomas: '
   en: Inglés
   es: Español
   zh: Chino
+
+resume:
+  resume: CV

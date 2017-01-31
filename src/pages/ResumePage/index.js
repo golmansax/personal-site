@@ -1,6 +1,7 @@
 import React from 'react';
-import Page from '../../layouts/Page';
+import { FormattedMessage } from 'react-intl';
 
+import Page from '../../layouts/Page';
 import styles from './index.css';
 
 const DOC_ID = '0BzLh8cg8kVzCa093RmtkYkFoZG8';
@@ -11,7 +12,7 @@ const ResumePage = () => (
   <Page
     head={{ title: 'Resume | Holman Gao' }}
     >
-    <h2>Resume</h2>
+    <h2><FormattedMessage id='resume.resume' /></h2>
     <div className={styles.pdfContainer}>
       <iframe src={URL} className={styles.pdf} />
     </div>
