@@ -3,7 +3,7 @@ import { FormattedMessage } from 'react-intl';
 
 import styles from './index.css';
 
-const PORTFOLIO_PATH = '/';
+const PORTFOLIO_PATH = '/portfolio';
 
 const Footer = () => (
   <footer className={styles.footer}>
