@@ -7,11 +7,19 @@ import './highlight.global.css';
 import HomePage from './pages/HomePage';
 import ResumePage from './pages/ResumePage';
 
+const routes = [
+  <IndexRoute key='index' component={HomePage} />,
+  <Route key='resume' path='resume' component={ResumePage} />,
+];
+
 export default (
   <Route path='/'>
-    <IndexRoute component={HomePage} />
-    <Route path='es' component={HomePage} />
-    <Route path='zh' component={HomePage} />
-    <Route path='resume' component={ResumePage} />
+    {routes}
+    <Route path='es'>
+      {routes}
+    </Route>
+    <Route path='zh'>
+      {routes}
+    </Route>
   </Route>
 );

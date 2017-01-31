@@ -22,7 +22,7 @@ const Footer = () => (
         <FormattedMessage id='contact.twitter' />
       </a>
     </nav>
-    <nav>
+    <nav className={styles.secondNav}>
       <FormattedMessage id='footer.languages' />{' '}
       <a href='/'><FormattedMessage id='footer.en' /></a> &bull;{' '}
       <a href='/zh'><FormattedMessage id='footer.zh' /></a> &bull;{' '}

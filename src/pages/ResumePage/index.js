@@ -11,6 +11,7 @@ const URL = 'https://docs.google.com/viewer?' +
 const ResumePage = () => (
   <Page
     head={{ title: 'Resume | Holman Gao' }}
+    className={styles.container}
     >
     <h2><FormattedMessage id='resume.resume' /></h2>
     <div className={styles.pdfContainer}>

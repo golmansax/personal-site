@@ -3,6 +3,12 @@
   padding: 0.5vr;
 }
 
+@media (--tablet-down) {
+  .secondNav {
+    margin-top: 0.5vr;
+  }
+}
+
 @media (--desktop-up) {
   .footer {
     display: flex;
