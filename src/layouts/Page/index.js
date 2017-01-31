@@ -35,7 +35,6 @@ const Page = (
   const metaTitle = head.metaTitle ? head.metaTitle : head.title;
 
   const meta = [
-    { property: 'og:type', content: 'article' },
     { property: 'og:title', content: metaTitle },
     {
       property: 'og:url',

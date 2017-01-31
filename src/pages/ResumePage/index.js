@@ -10,7 +10,11 @@ const URL = 'https://docs.google.com/viewer?' +
 
 const ResumePage = () => (
   <Page
-    head={{ title: 'Resume | Holman Gao' }}
+    head={{
+      title: 'Resume | Holman Gao',
+      description: 'Up-to-date curriculum vitae/resume. Includes work, education, ' +
+        'side projects, volunteering, hobbies.',
+    }}
     className={styles.container}
     >
     <h2><FormattedMessage id='resume.resume' /></h2>

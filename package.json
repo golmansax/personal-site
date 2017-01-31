@@ -2,7 +2,7 @@
   "private": true,
   "name": "personal-site",
   "homepage": "https://golmansax.com/personal-site",
-  "twitter": "",
+  "twitter": "golmansax",
   "repository": "https://github.com/golmansax/personal-site.git",
   "scripts": {
     "lint:js": "eslint --ignore-path .gitignore --fix .",

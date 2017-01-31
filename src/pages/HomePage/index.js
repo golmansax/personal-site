@@ -65,7 +65,11 @@ HomePageContent.propTypes = {
 
 const HomePage = () => (
   <Page
-    head={{ title: 'Holman Gao – entrepreneur | developer | in New York' }}
+    head={{
+      title: 'Holman Gao – entrepreneur | developer | in New York',
+      description: 'Personal site of Holman Gao, entrepreneur and freelance developer ' +
+        'with a love for education. University of Maryland and Blair Magnet alum.',
+    }}
     >
     <div className={styles.contentContainer}>
       <div className={styles.leftColumn}>
