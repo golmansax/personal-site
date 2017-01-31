@@ -1,5 +1,11 @@
 header:
-  name: Gao
+  name: Holman Gao
   job1: entrepreneur
   job2: freelance developer
   location: 'in New York, NY'
+
+footer:
+  languages: 'My languages: '
+  en: English
+  es: Spanish
+  zh: Chinese

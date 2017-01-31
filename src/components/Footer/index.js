@@ -1,4 +1,5 @@
 import React from 'react';
+import { FormattedMessage } from 'react-intl';
 
 import styles from './index.css';
 
@@ -20,6 +21,12 @@ const Footer = () => (
       <a href='https://twitter.com/golmansax' target='_blank' rel='noopener noreferrer'>
         Twitter
       </a>
+    </nav>
+    <nav>
+      <FormattedMessage id='footer.languages' />{' '}
+      <a href='/'><FormattedMessage id='footer.en' /></a> &bull;{' '}
+      <a href='/zh'><FormattedMessage id='footer.zh' /></a> &bull;{' '}
+      <a href='/es'><FormattedMessage id='footer.es' /></a>
     </nav>
   </footer>
 );

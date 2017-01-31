@@ -3,3 +3,9 @@ header:
   job1: 企业家
   job2: 自由开发者
   location: 在纽约
+
+footer:
+  languages: '我的语文：'
+  en: 英语
+  es: 西班牙语
+  zh: 汉语

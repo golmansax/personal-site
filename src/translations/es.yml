@@ -3,3 +3,9 @@ header:
   job1: empresario
   job2: desarrollador freelance
   location: en Nueva York
+
+footer:
+  languages: 'Mis idiomas: '
+  en: Inglés
+  es: Español
+  zh: Chino

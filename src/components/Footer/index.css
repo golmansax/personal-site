@@ -3,6 +3,14 @@
   padding: 0.5vr;
 }
 
+@media (--desktop-up) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 @media (--large-desktop-up) {
   .footer {
     padding-left: 0;
