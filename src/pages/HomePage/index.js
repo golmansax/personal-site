@@ -22,7 +22,7 @@ const UP_TO = [
   },
 ];
 
-const PORTFOLIO_PATH = '/';
+const PORTFOLIO_PATH = '/portfolio';
 
 const HomePageContent = ({ className }) => (
   <div className={className}>
