@@ -11,7 +11,6 @@ header:
 footer:
   home: 首页
   blog: 博客
-  portfolio: 作品集
   languages: '我的语文：'
   en: 英语
   es: 西班牙语
@@ -21,6 +20,8 @@ home:
   current: '目前在做：'
   contact: 交往
   portfolioIntro: '想看我做了社么？'
+  myPortfolio: 我的作品集
 
-resume:
+pages:
+  portfolio: 作品集
   resume: 简历

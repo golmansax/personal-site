@@ -3,6 +3,7 @@ import classnames from 'classnames';
 import { FormattedMessage } from 'react-intl';
 
 import ContactMessage from './ContactMessage';
+import PortfolioMessage from './PortfolioMessage';
 import Page from '../../layouts/Page';
 import styles from './index.css';
 
@@ -23,8 +24,6 @@ const UP_TO = [
     slug: 'bookBooster',
   },
 ];
-
-const PORTFOLIO_PATH = '/portfolio';
 
 const HomePageContent = ({ className }) => {
   return (
@@ -48,7 +47,7 @@ const HomePageContent = ({ className }) => {
       </div>
       <div className={styles.contentSection}>
         <h4 className={styles.contentSectionHeading}><FormattedMessage id='home.portfolioIntro' /></h4>
-        <div>Check out <a href={PORTFOLIO_PATH}>my portfolio</a>.</div>
+        <PortfolioMessage />
       </div>
       <div className={styles.contentSection}>
         <h4 className={styles.contentSectionHeading}><FormattedMessage id='home.contact' /></h4>

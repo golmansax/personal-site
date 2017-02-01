@@ -3,15 +3,13 @@ import { FormattedMessage } from 'react-intl';
 
 import styles from './index.css';
 
-const PORTFOLIO_PATH = '/portfolio';
-
 const Footer = () => (
   <footer className={styles.footer}>
     <nav>
       © {new Date().getFullYear()} Holman Gao
       {' '}&bull; <a href='/'><FormattedMessage id='footer.home' /></a>
-      {' '}&bull; <a href={PORTFOLIO_PATH}><FormattedMessage id='footer.portfolio' /></a>
-      {' '}&bull; <a href='/resume'><FormattedMessage id='resume.resume' /></a>
+      {' '}&bull; <a href='/portfolio'><FormattedMessage id='pages.portfolio' /></a>
+      {' '}&bull; <a href='/resume'><FormattedMessage id='pages.resume' /></a>
       {' '}&bull; <a href='/blog'><FormattedMessage id='footer.blog' /></a>
       {' '}&bull;{' '}
       <a href='https://github.com/golmansax' target='_blank' rel='noopener noreferrer'>

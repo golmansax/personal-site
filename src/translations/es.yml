@@ -11,7 +11,6 @@ header:
 footer:
   home: Portada
   blog: Blog
-  portfolio: Portafolio
   languages: 'Mis idiomas: '
   en: Inglés
   es: Español
@@ -21,6 +20,8 @@ home:
   current: 'Mis proyectos actuales:'
   contact: Contacto
   portfolioIntro: ¿Quieres ver lo que he hecho?
+  myPortfolio: mi portafolio
 
-resume:
+pages:
+  portfolio: Portafolio
   resume: CV

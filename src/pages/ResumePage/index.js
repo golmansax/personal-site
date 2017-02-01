@@ -17,7 +17,7 @@ const ResumePage = () => (
     }}
     className={styles.container}
     >
-    <h2><FormattedMessage id='resume.resume' /></h2>
+    <h2><FormattedMessage id='pages.resume' /></h2>
     <div className={styles.pdfContainer}>
       <iframe src={URL} className={styles.pdf} />
     </div>
