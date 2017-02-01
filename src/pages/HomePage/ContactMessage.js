@@ -1,7 +1,10 @@
-import React, { PropTypes } from 'react';
-import { injectIntl, FormattedMessage } from 'react-intl';
+import React from 'react';
+import { injectIntl, intlShape, FormattedMessage } from 'react-intl';
 
-const Email = () => <a href='mailto:holman@golmansax.com'><FormattedMessage id='contact.email' /></a>;
+const Email = () => (
+  <a href='mailto:holman@golmansax.com'><FormattedMessage id='contact.email' /></a>
+);
+
 const Twitter = () => (
   <a href='https://twitter.com/golmansax' target='_blank' rel='noopener noreferrer'>
     <FormattedMessage id='contact.twitter' />
@@ -33,6 +36,10 @@ const ContactMessage = ({ intl }) => {
 
     default: throw new Error(`Invalid locale: ${intl.locale}`);
   }
+};
+
+ContactMessage.propTypes = {
+  intl: intlShape.isRequired,
 };
 
 export default injectIntl(ContactMessage);

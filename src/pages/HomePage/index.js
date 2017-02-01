@@ -25,37 +25,37 @@ const UP_TO = [
   },
 ];
 
-const HomePageContent = ({ className }) => {
-  return (
-    <div className={className}>
-      <div className={styles.contentSection}>
-        <h4 className={styles.contentSectionHeading}><FormattedMessage id='home.current' /></h4>
-        <div>
-          {UP_TO.map(({ slug, url, text }) => (
-            <div key={url}>
-              <a
-                href={url}
-                target='_blank'
-                rel='noopener noreferrer'
-                className={classnames([styles.upToLink, styles[slug]])}
-                >
-                {text}
-              </a>
-            </div>
+const HomePageContent = ({ className }) => (
+  <div className={className}>
+    <div className={styles.contentSection}>
+      <h4 className={styles.contentSectionHeading}><FormattedMessage id='home.current' /></h4>
+      <div>
+        {UP_TO.map(({ slug, url, text }) => (
+          <div key={url}>
+            <a
+              href={url}
+              target='_blank'
+              rel='noopener noreferrer'
+              className={classnames([styles.upToLink, styles[slug]])}
+              >
+              {text}
+            </a>
+          </div>
           ))}
-        </div>
-      </div>
-      <div className={styles.contentSection}>
-        <h4 className={styles.contentSectionHeading}><FormattedMessage id='home.portfolioIntro' /></h4>
-        <PortfolioMessage />
-      </div>
-      <div className={styles.contentSection}>
-        <h4 className={styles.contentSectionHeading}><FormattedMessage id='home.contact' /></h4>
-        <ContactMessage />
       </div>
     </div>
+    <div className={styles.contentSection}>
+      <h4 className={styles.contentSectionHeading}>
+        <FormattedMessage id='home.portfolioIntro' />
+      </h4>
+      <PortfolioMessage />
+    </div>
+    <div className={styles.contentSection}>
+      <h4 className={styles.contentSectionHeading}><FormattedMessage id='home.contact' /></h4>
+      <ContactMessage />
+    </div>
+  </div>
   );
-};
 
 HomePageContent.propTypes = {
   className: PropTypes.string,
