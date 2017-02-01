@@ -47,8 +47,8 @@ const HomePageContent = ({ className }) => {
         </div>
       </div>
       <div className={styles.contentSection}>
-        <h4 className={styles.contentSectionHeading}>Want to see what I&rsquo;ve built?</h4>
-        <div>Check out my work on <a href={PORTFOLIO_PATH}>my portfolio</a>.</div>
+        <h4 className={styles.contentSectionHeading}><FormattedMessage id='home.portfolioIntro' /></h4>
+        <div>Check out <a href={PORTFOLIO_PATH}>my portfolio</a>.</div>
       </div>
       <div className={styles.contentSection}>
         <h4 className={styles.contentSectionHeading}><FormattedMessage id='home.contact' /></h4>

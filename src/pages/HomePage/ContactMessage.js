@@ -20,7 +20,7 @@ const ContactMessage = ({ intl }) => {
     case 'es':
       return (
         <div>
-          Contáctame por <Email /> o <Twitter />. Prometo que leeré su mensaje!
+          Contáctame por <Email /> o <Twitter />. Prometo que leeré tu mensaje!
         </div>
       );
 

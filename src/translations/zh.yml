@@ -20,6 +20,7 @@ footer:
 home:
   current: '目前在做：'
   contact: 交往
+  portfolioIntro: '想看我做了社么？'
 
 resume:
   resume: 简历

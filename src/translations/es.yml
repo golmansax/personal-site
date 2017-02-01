@@ -20,6 +20,7 @@ footer:
 home:
   current: 'Mis proyectos actuales:'
   contact: Contacto
+  portfolioIntro: ¿Quieres ver lo que he hecho?
 
 resume:
   resume: CV

@@ -20,6 +20,7 @@ footer:
 home:
   current: 'Currently working on:'
   contact: Contact
+  portfolioIntro: Want to see what I’ve worked on?
 
 resume:
   resume: Resume
