@@ -1,4 +1,5 @@
 contact:
+  email: email
   twitter: Twitter
 
 header:
@@ -15,6 +16,10 @@ footer:
   en: English
   es: Spanish
   zh: Chinese
+
+home:
+  current: 'Currently working on:'
+  contact: Contact
 
 resume:
   resume: Resume

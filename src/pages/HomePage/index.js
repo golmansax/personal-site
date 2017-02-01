@@ -1,7 +1,9 @@
 import React, { PropTypes } from 'react';
 import classnames from 'classnames';
-import Page from '../../layouts/Page';
+import { FormattedMessage } from 'react-intl';
 
+import ContactMessage from './ContactMessage';
+import Page from '../../layouts/Page';
 import styles from './index.css';
 
 const UP_TO = [
@@ -24,40 +26,37 @@ const UP_TO = [
 
 const PORTFOLIO_PATH = '/portfolio';
 
-const HomePageContent = ({ className }) => (
-  <div className={className}>
-    <div className={styles.contentSection}>
-      <h4 className={styles.contentSectionHeading}>Currently working on...</h4>
-      <div>
-        {UP_TO.map(({ slug, url, text }) => (
-          <div key={url}>
-            <a
-              href={url}
-              target='_blank'
-              rel='noopener noreferrer'
-              className={classnames([styles.upToLink, styles[slug]])}
-              >
-              {text}
-            </a>
-          </div>
-        ))}
+const HomePageContent = ({ className }) => {
+  return (
+    <div className={className}>
+      <div className={styles.contentSection}>
+        <h4 className={styles.contentSectionHeading}><FormattedMessage id='home.current' /></h4>
+        <div>
+          {UP_TO.map(({ slug, url, text }) => (
+            <div key={url}>
+              <a
+                href={url}
+                target='_blank'
+                rel='noopener noreferrer'
+                className={classnames([styles.upToLink, styles[slug]])}
+                >
+                {text}
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className={styles.contentSection}>
+        <h4 className={styles.contentSectionHeading}>Want to see what I&rsquo;ve built?</h4>
+        <div>Check out my work on <a href={PORTFOLIO_PATH}>my portfolio</a>.</div>
+      </div>
+      <div className={styles.contentSection}>
+        <h4 className={styles.contentSectionHeading}><FormattedMessage id='home.contact' /></h4>
+        <ContactMessage />
       </div>
     </div>
-    <div className={styles.contentSection}>
-      <h4 className={styles.contentSectionHeading}>Want to see what I&rsquo;ve built?</h4>
-      <div>Check out my work on <a href={PORTFOLIO_PATH}>my portfolio</a>.</div>
-    </div>
-    <div className={styles.contentSection}>
-      <h4 className={styles.contentSectionHeading}>Contact</h4>
-      <div>
-        Reach out via <a href='mailto:holman@golmansax.com'>email</a>{' '}
-        or <a href='https://twitter.com/golmansax' target='_blank' rel='noopener noreferrer'>
-          Twitter
-        </a>. I read every message, I promise!
-      </div>
-    </div>
-  </div>
-);
+  );
+};
 
 HomePageContent.propTypes = {
   className: PropTypes.string,

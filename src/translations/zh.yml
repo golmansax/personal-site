@@ -1,4 +1,5 @@
 contact:
+  email: 电子邮件
   twitter: 推特
 
 header:
@@ -15,6 +16,10 @@ footer:
   en: 英语
   es: 西班牙语
   zh: 汉语
+
+home:
+  current: '目前在做：'
+  contact: 交往
 
 resume:
   resume: 简历

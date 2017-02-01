@@ -1,4 +1,5 @@
 contact:
+  email: email
   twitter: Twitter
 
 header:
@@ -15,6 +16,10 @@ footer:
   en: Inglés
   es: Español
   zh: Chino
+
+home:
+  current: 'Mis proyectos actuales:'
+  contact: Contacto
 
 resume:
   resume: CV
