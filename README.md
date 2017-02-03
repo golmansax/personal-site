@@ -17,3 +17,7 @@ npm start
 ```sh
 npm run build
 ```
+
+## Credits
+- Photos by: http://jvenezue.la/
+- Favicon from: http://alispagnola.com/
