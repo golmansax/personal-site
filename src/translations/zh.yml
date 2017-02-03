@@ -17,9 +17,9 @@ footer:
   zh: 中文
 
 home:
-  current: '目前在做：'
-  contact: 交往
-  portfolioIntro: '想看我做了社么？'
+  current: '目前的项目：'
+  contact: 联系方式
+  portfolioIntro: '想看我做了什么？'
   myPortfolio: 我的作品集
 
 pages:
