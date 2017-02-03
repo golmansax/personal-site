@@ -30,7 +30,7 @@ const ContactMessage = ({ intl }) => {
     case 'zh':
       return (
         <div>
-          用<Email />或者<Twitter />跟我联系。我保证我会读你的信息！
+          请用<Email />或者<Twitter />跟我联系。很期待收到您的信息！
         </div>
       );
 

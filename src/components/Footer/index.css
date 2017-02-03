@@ -3,8 +3,16 @@
   padding: 0.5vr;
 }
 
-.secondNav {
+.section {
   margin-top: 0.5vr;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.credits {
+  margin-top: 2vr;
 }
 
 @media (--large-desktop-up) {
