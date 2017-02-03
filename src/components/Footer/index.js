@@ -6,6 +6,12 @@ import styles from './index.css';
 const Footer = () => (
   <footer className={styles.footer}>
     <nav>
+      <FormattedMessage id='footer.languages' />{' '}
+      <a href='/'><FormattedMessage id='footer.en' /></a> &bull;{' '}
+      <a href='/zh'><FormattedMessage id='footer.zh' /></a> &bull;{' '}
+      <a href='/es'><FormattedMessage id='footer.es' /></a>
+    </nav>
+    <nav className={styles.secondNav}>
       © {new Date().getFullYear()} Holman Gao
       {' '}&bull; <a href='/'><FormattedMessage id='footer.home' /></a>
       {' '}&bull; <a href='/portfolio'><FormattedMessage id='pages.portfolio' /></a>
@@ -19,12 +25,6 @@ const Footer = () => (
       <a href='https://twitter.com/golmansax' target='_blank' rel='noopener noreferrer'>
         <FormattedMessage id='contact.twitter' />
       </a>
-    </nav>
-    <nav className={styles.secondNav}>
-      <FormattedMessage id='footer.languages' />{' '}
-      <a href='/'><FormattedMessage id='footer.en' /></a> &bull;{' '}
-      <a href='/zh'><FormattedMessage id='footer.zh' /></a> &bull;{' '}
-      <a href='/es'><FormattedMessage id='footer.es' /></a>
     </nav>
   </footer>
 );
