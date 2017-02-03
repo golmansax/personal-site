@@ -1,8 +1,6 @@
 import React from 'react';
 import { injectIntl, intlShape } from 'react-intl';
 
-import styles from './index.css';
-
 const Justin = () => (
   <a href='http://jvenezue.la/' target='_blank' rel='noopener noreferrer'>Justin Venezuela</a>
 );
