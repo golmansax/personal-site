@@ -17,7 +17,7 @@ footer:
   zh: 中文
 
 home:
-  current: '目前的项目：'
+  current: '目前的工作和项目：'
   contact: 联系方式
   portfolioIntro: '想看我做了什么？'
   myPortfolio: 我的作品集
@@ -25,3 +25,7 @@ home:
 pages:
   portfolio: 作品集
   resume: 简历
+
+positions:
+  freelanceDeveloper: 自由开发者
+  courseMentor: 课程导师

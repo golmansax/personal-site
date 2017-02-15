@@ -17,7 +17,7 @@ footer:
   zh: Mandarin
 
 home:
-  current: 'Currently working on:'
+  current: 'Current work/projects:'
   contact: Contact
   portfolioIntro: Want to see what I’ve worked on?
   myPortfolio: my portfolio
@@ -25,3 +25,7 @@ home:
 pages:
   portfolio: Portfolio
   resume: Resume
+
+positions:
+  freelanceDeveloper: freelance developer
+  courseMentor: course mentor

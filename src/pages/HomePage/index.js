@@ -23,6 +23,18 @@ const UP_TO = [
     url: 'https://bayarea.bookbooster.org',
     slug: 'bookBooster',
   },
+  {
+    text: 'Verse',
+    url: 'https://verse.press',
+    slug: 'verse',
+    positionSlug: 'freelanceDeveloper',
+  },
+  {
+    text: 'Viking Code School',
+    url: 'https://www.vikingcodeschool.com',
+    slug: 'viking',
+    positionSlug: 'courseMentor',
+  },
 ];
 
 const HomePageContent = ({ className }) => (
@@ -30,7 +42,7 @@ const HomePageContent = ({ className }) => (
     <div className={styles.contentSection}>
       <h4 className={styles.contentSectionHeading}><FormattedMessage id='home.current' /></h4>
       <div>
-        {UP_TO.map(({ slug, url, text }) => (
+        {UP_TO.map(({ slug, url, text, positionSlug }) => (
           <div key={url}>
             <a
               href={url}
@@ -40,6 +52,11 @@ const HomePageContent = ({ className }) => (
               >
               {text}
             </a>
+            {positionSlug && (
+              <small className={styles.position}>
+                <FormattedMessage id={`positions.${positionSlug}`} />
+              </small>
+            )}
           </div>
           ))}
       </div>

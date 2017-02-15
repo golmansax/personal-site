@@ -78,6 +78,30 @@ a.upToLink {
       color: #f9c4da;
     }
   }
+
+  &.verse {
+    background-color: #444;
+    color: #f9fafc;
+
+    &:hover {
+      color: #80d3fb;
+    }
+  }
+
+  &.viking {
+    background-color: #fff;
+    border-color: #333;
+    color: #333;
+
+    &:hover {
+      background-color: #ecf4fb;
+    }
+  }
+}
+
+.position {
+  padding-left: 0.5vr;
+  color: var(--colorLightText);
 }
 
 @media (--tablet-up) {
@@ -104,7 +128,6 @@ a.upToLink {
 
   .tabletContent {
     display: block;
-    background: color(var(--colorPrimary) l(98%) alpha(0.8));
     color: var(--colorText);
     padding: 1vr;
   }

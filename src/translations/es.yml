@@ -17,7 +17,7 @@ footer:
   zh: Chino
 
 home:
-  current: 'Mis proyectos actuales:'
+  current: 'Mis trabajos/proyectos actuales:'
   contact: Contacto
   portfolioIntro: ¿Quieres ver lo que he hecho?
   myPortfolio: mi portafolio
@@ -25,3 +25,7 @@ home:
 pages:
   portfolio: Portafolio
   resume: CV
+
+positions:
+  freelanceDeveloper: desarrollador freelance
+  courseMentor: mentor del curso
