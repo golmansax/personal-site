@@ -1,9 +1,11 @@
 import React, { PropTypes } from 'react';
+import { injectIntl, intlShape } from 'react-intl';
 import Helmet from 'react-helmet';
 
-const DefaultHeadMeta = (props, { metadata: { pkg } }) => (
+const DefaultHeadMeta = ({ meta, scripts, intl }, { metadata: { pkg } }) => (
   <div hidden>
     <Helmet
+      htmlAttributes={{ lang: intl.locale }}
       link={[
         {
           rel: 'icon',
@@ -22,11 +24,11 @@ const DefaultHeadMeta = (props, { metadata: { pkg } }) => (
         },
         { property: 'og:site_name', content: pkg.name },
         { name: 'twitter:site', content: `@${pkg.twitter}` },
-        ...props.meta ? props.meta : [],
+        ...(meta || []),
       ]}
       script={[
         { src: 'https://cdn.polyfill.io/v2/polyfill.min.js' },
-        ...props.scripts ? props.scripts : [],
+        ...(scripts || []),
       ]}
     />
 
@@ -43,10 +45,11 @@ const DefaultHeadMeta = (props, { metadata: { pkg } }) => (
 DefaultHeadMeta.propTypes = {
   meta: React.PropTypes.arrayOf(React.PropTypes.object),
   scripts: React.PropTypes.arrayOf(React.PropTypes.object),
+  intl: intlShape.isRequired,
 };
 
 DefaultHeadMeta.contextTypes = {
   metadata: PropTypes.object.isRequired,
 };
 
-export default DefaultHeadMeta;
+export default injectIntl(DefaultHeadMeta);
