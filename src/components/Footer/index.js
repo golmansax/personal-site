@@ -8,9 +8,9 @@ const Footer = () => (
   <footer className={styles.footer}>
     <nav className={styles.section}>
       <FormattedMessage id='footer.languages' />{' '}
-      <a href='/'><FormattedMessage id='footer.en' /></a> &bull;{' '}
-      <a href='/zh'><FormattedMessage id='footer.zh' /></a> &bull;{' '}
-      <a href='/es'><FormattedMessage id='footer.es' /></a>
+      <a href='/'>English</a> &bull;{' '}
+      <a href='/zh'>中文</a> &bull;{' '}
+      <a href='/es'>Español</a>
     </nav>
     <nav className={styles.section}>
       © {new Date().getFullYear()} Holman Gao
