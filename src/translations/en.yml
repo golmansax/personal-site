@@ -25,6 +25,7 @@ home:
 pages:
   portfolio: Portfolio
   resume: Resume
+  about: About Me
 
 positions:
   freelanceDeveloper: freelance developer

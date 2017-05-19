@@ -1,0 +1,36 @@
+.container {
+  padding-bottom: 1vr;
+}
+
+.leftColumn {
+  padding-bottom: 1vr;
+}
+
+@media (--tablet-up) {
+  .contentContainer {
+    display: flex;
+  }
+
+  .leftColumn {
+    padding-bottom: 0;
+  }
+
+  .leftColumn,
+  .rightColumn {
+    padding-right: 1vr;
+    flex: 1;
+  }
+}
+
+@media (--desktop-up) {
+  .rightColumn {
+    flex: 2;
+  }
+}
+
+@media (--desktop-down) {
+  .container {
+    padding-left: 0.5vr;
+    padding-right: 0.5vr;
+  }
+}
