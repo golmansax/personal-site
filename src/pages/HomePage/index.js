@@ -78,8 +78,9 @@ HomePageContent.propTypes = {
   className: PropTypes.string,
 };
 
-const HomePage = () => (
+const HomePage = (props) => (
   <Page
+    {...props}
     head={{
       title: 'Holman Gao – entrepreneur | developer | in New York',
       description: 'Personal site of Holman Gao, entrepreneur and freelance developer ' +

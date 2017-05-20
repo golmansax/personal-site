@@ -1,12 +1,13 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
+import { injectIntl, intlShape, FormattedMessage } from 'react-intl';
+import { getIntlPath } from '../../utils/intl';
 
 import styles from './index.css';
 
-const Header = () => (
+const Header = ({ intl }) => (
   <header className={styles.header}>
     <h1 className={styles.heading}>
-      <a href='/' className={styles.link}>
+      <a href={getIntlPath({ locale: intl.locale, path: '/' })} className={styles.link}>
         <FormattedMessage id='header.name' />
         <small className={styles.subHeading}>
           <FormattedMessage id='header.job1' /> |{' '}
@@ -18,4 +19,8 @@ const Header = () => (
   </header>
 );
 
-export default Header;
+Header.propTypes = {
+  intl: intlShape.isRequired,
+};
+
+export default injectIntl(Header);

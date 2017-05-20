@@ -32,7 +32,6 @@ positions:
   courseMentor: course mentor
 
 about:
-  initialMessage:
   motto:
-    My life motto is to have fun, be thankful, and improve the world the
-    best I can.
+    'My life motto is: have fun, be thankful, and improve the world the best you can.'
+  acroyoga: do acroyoga

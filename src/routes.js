@@ -13,7 +13,13 @@ export default (
     <IndexRoute component={HomePage} />
     <Route path='about-me' component={AboutPage} />
     <Route path='resume' component={ResumePage} />
-    <Route path='es' component={HomePage} />
-    <Route path='zh' component={HomePage} />
+    <Route path='es'>
+      <IndexRoute component={HomePage} />
+      <Route path='about-me' component={AboutPage} />
+    </Route>
+    <Route path='zh'>
+      <IndexRoute component={HomePage} />
+      <Route path='about-me' component={AboutPage} />
+    </Route>
   </Route>
 );

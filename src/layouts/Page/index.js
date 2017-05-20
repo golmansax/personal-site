@@ -2,7 +2,6 @@ import React, { PropTypes } from 'react';
 import Helmet from 'react-helmet';
 import { IntlProvider } from 'react-intl';
 import classnames from 'classnames';
-import warning from 'warning';
 import { joinUri } from 'phenomic';
 
 import { getIntl, getLocale } from '../../utils/intl';
@@ -15,8 +14,6 @@ import styles from './index.css';
 const Page = (
   {
     className,
-    __filename,
-    __url,
     head,
     children,
     showHeader,
@@ -28,18 +25,15 @@ const Page = (
     location,
   },
 ) => {
-  warning(
-    typeof head.title === 'string',
-    `Your page '${__filename}' needs a title`,
-  );
-
   const metaTitle = head.metaTitle ? head.metaTitle : head.title;
+
+  const { pathname } = location;
 
   const meta = [
     { property: 'og:title', content: metaTitle },
     {
       property: 'og:url',
-      content: joinUri(process.env.PHENOMIC_USER_URL, __url),
+      content: joinUri(process.env.PHENOMIC_USER_URL, pathname),
     },
     { property: 'og:description', content: head.description },
     { name: 'twitter:card', content: 'summary' },
@@ -69,7 +63,7 @@ const Page = (
         <div className={classnames({ [styles.page]: true, [className]: className })}>
           {children}
         </div>
-        {showFooter && <Footer />}
+        {showFooter && <Footer currentPath={pathname} />}
       </div>
     </IntlProvider>
   );
@@ -78,8 +72,6 @@ const Page = (
 Page.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
-  __filename: PropTypes.string,
-  __url: PropTypes.string,
   head: PropTypes.object.isRequired,
   showHeader: PropTypes.bool.isRequired,
   showFooter: PropTypes.bool.isRequired,

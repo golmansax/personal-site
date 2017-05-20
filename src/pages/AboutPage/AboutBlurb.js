@@ -4,6 +4,16 @@ import { injectIntl, intlShape, FormattedMessage } from 'react-intl';
 const ACROYOGA_LINK = 'http://www.sfgate.com/music/slideshow/' +
   'Outside-Lands-2014-91325.php';
 
+const AcroyogaLink = () => (
+  <a
+    href={ACROYOGA_LINK}
+    target='_blank'
+    rel='noopener noreferrer'
+    >
+    <FormattedMessage id='about.acroyoga' />
+  </a>
+);
+
 const MyPortfolio = () => <a href='/portfolio'><FormattedMessage id='home.myPortfolio' /></a>;
 
 const Intro = ({ intl }) => {
@@ -24,7 +34,13 @@ const Intro = ({ intl }) => {
         </p>
       );
 
-    case 'zh': return <div>去<MyPortfolio /></div>;
+    case 'zh':
+      return (
+        <p>
+          你好！我叫高鸿鸣。我是一个企业家和自由职业者。
+          去我的<MyPortfolio />如果你想看我我做了什么。
+        </p>
+      );
 
     default: throw new Error(`Invalid locale: ${intl.locale}`);
   }
@@ -34,21 +50,46 @@ Intro.propTypes = {
   intl: intlShape.isRequired,
 };
 
+const Hobbies = ({ intl }) => {
+  switch (intl.locale) {
+    case 'en':
+      return (
+        <p>
+          I currently live in Manhattan.  In my free time, I like to sing and
+          play guitar, go to salsa and bachata socials, play volleyball, and
+          sometimes even <AcroyogaLink />.
+        </p>
+      );
+
+    case 'es':
+      return (
+        <p>
+          Vivo en Manhattan.  En mi tiempo libre, me gusta cantar y tocar la
+          guitarra, bailar salsa y bachata, jugar voleibol, y
+          a veces <AcroyogaLink />.
+        </p>
+      );
+
+    case 'zh':
+      return (
+        <p>
+          我现在住在曼哈顿。
+          当我有空暇，我喜欢唱歌和弹吉他，跳莎莎舞，打排球，和<AcroyogaLink />。
+        </p>
+      );
+
+    default: throw new Error(`Invalid locale: ${intl.locale}`);
+  }
+};
+
+Hobbies.propTypes = {
+  intl: intlShape.isRequired,
+};
+
 const AboutBlurb = ({ intl, className }) => (
   <div className={className}>
     <Intro intl={intl} />
-    <p>
-      I currently live in Manhattan.  In my free time, I like to sing and
-      play guitar, go to salsa and bachata socials, play volleyball, and
-      sometimes even{' '}
-      <a
-        href={ACROYOGA_LINK}
-        target='_blank'
-        rel='noopener noreferrer'
-        >
-        do acroyoga
-      </a>.
-    </p>
+    <Hobbies intl={intl} />
     <p><FormattedMessage id='about.motto' /></p>
   </div>
 );

@@ -30,6 +30,11 @@ export function getLocale(url) {
     : defaultLocale;
 }
 
+export function getPathWithoutIntl(url) {
+  const regex = new RegExp(`/(${locales.join('|')})/`);
+  return url.replace(regex, '/');
+}
+
 export function getIntl(locale) {
   // We will inject this into IntlProvider
   return {
@@ -37,4 +42,14 @@ export function getIntl(locale) {
     messages: messages[locale],
     defaultLocale,
   };
+}
+
+export function getIntlPath({ locale, path }) {
+  switch (locale) {
+    case 'es':
+    case 'zh':
+      return `/${locale}${path}`;
+
+    default: return path;
+  }
 }
