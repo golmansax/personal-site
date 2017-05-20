@@ -6,6 +6,10 @@
   padding-bottom: 1vr;
 }
 
+.rightColumn p {
+  margin: 0 0 1vr;
+}
+
 @media (--tablet-up) {
   .contentContainer {
     display: flex;
@@ -19,12 +23,6 @@
   .rightColumn {
     padding-right: 1vr;
     flex: 1;
-  }
-}
-
-@media (--desktop-up) {
-  .rightColumn {
-    flex: 2;
   }
 }
 

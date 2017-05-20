@@ -15,6 +15,7 @@ const Footer = () => (
     <nav className={styles.section}>
       © {new Date().getFullYear()} Holman Gao
       {' '}&bull; <a href='/'><FormattedMessage id='footer.home' /></a>
+      {' '}&bull; <a href='/about-me'><FormattedMessage id='pages.about' /></a>
       {' '}&bull; <a href='/portfolio'><FormattedMessage id='pages.portfolio' /></a>
       {' '}&bull; <a href='/resume'><FormattedMessage id='pages.resume' /></a>
       {' '}&bull; <a href='/blog'><FormattedMessage id='footer.blog' /></a>

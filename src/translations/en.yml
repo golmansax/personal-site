@@ -30,3 +30,9 @@ pages:
 positions:
   freelanceDeveloper: freelance developer
   courseMentor: course mentor
+
+about:
+  initialMessage:
+  motto:
+    My life motto is to have fun, be thankful, and improve the world the
+    best I can.

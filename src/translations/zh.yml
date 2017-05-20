@@ -29,3 +29,11 @@ pages:
 positions:
   freelanceDeveloper: 自由开发者
   courseMentor: 课程导师
+
+about:
+  initialMessage:
+    Hola! Me llamo Holman, soy un empresario y desarrollador freelance con un
+    amor por educación.
+  motto:
+    Mi lema de vida es divertir, agradecer, y mejorar el mundo lo mejor que
+    pueda.

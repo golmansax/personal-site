@@ -2,13 +2,20 @@
   align-items: center;
   height: 100%;
   max-width: 100%;
-  width: var(--widthMax);
   margin: 0 auto;
 
   /* handy for content */
   & img {
     max-width: 100%;
   }
+}
+
+.default {
+  width: var(--widthMax);
+}
+
+.narrow {
+  width: var(--widthMaxNarrow);
 }
 
 a {

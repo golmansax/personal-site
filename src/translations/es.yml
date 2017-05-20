@@ -25,7 +25,13 @@ home:
 pages:
   portfolio: Portafolio
   resume: CV
+  about: Sobre Mí
 
 positions:
   freelanceDeveloper: desarrollador freelance
   courseMentor: mentor del curso
+
+about:
+  motto:
+    Mi lema de vida es divertir, agradecer, y mejorar el mundo lo mejor que
+    pueda.

@@ -21,6 +21,7 @@ const Page = (
     children,
     showHeader,
     showFooter,
+    width,
   },
   {
     metadata: { pkg },
@@ -53,7 +54,12 @@ const Page = (
 
   return (
     <IntlProvider {...intl}>
-      <div className={styles.pageContainer}>
+      <div
+        className={classnames({
+          [styles.pageContainer]: true,
+          [styles[width]]: styles[width],
+        })}
+        >
         <DefaultHeadMeta />
         <Helmet
           title={metaTitle}
@@ -77,6 +83,7 @@ Page.propTypes = {
   head: PropTypes.object.isRequired,
   showHeader: PropTypes.bool.isRequired,
   showFooter: PropTypes.bool.isRequired,
+  width: PropTypes.oneOf(['narrow', 'default']),
 };
 
 Page.contextTypes = {
@@ -87,6 +94,7 @@ Page.contextTypes = {
 Page.defaultProps = {
   showHeader: true,
   showFooter: true,
+  width: 'default',
 };
 
 export default Page;
