@@ -16,14 +16,14 @@ if (module.hot) {
   module.hot.accept(
     ['../src/metadata', '../src/routes', '../src/store'],
     // webpack 1
+    /*
     () => phenomicClient({
       metadata: require('../src/metadata').default,
       routes: require('../src/routes').default,
       store: require('../src/store').default,
     }),
-    // webpack 2
-    /*
-    () => phenomicClient({ metadata, routes, store })
     */
+    // webpack 2
+    () => phenomicClient({ metadata, routes, store }),
   );
 }

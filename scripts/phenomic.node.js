@@ -4,5 +4,7 @@ import metadata from '../src/metadata';
 import routes from '../src/routes';
 import store from '../src/store';
 
-module.exports = (options) =>
-  phenomicStatic({ ...options, metadata, routes, store });
+// module.exports = (options) =>
+export default function (options) {
+  return phenomicStatic({ ...options, metadata, routes, store });
+}

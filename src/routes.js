@@ -11,8 +11,6 @@ import ResumePage from './pages/ResumePage';
 export default (
   <Route path='/'>
     <IndexRoute component={HomePage} />
-    <Route path='about-me' component={AboutPage} />
-    <Route path='resume' component={ResumePage} />
     <Route path='es'>
       <IndexRoute component={HomePage} />
       <Route path='about-me' component={AboutPage} />
@@ -21,5 +19,7 @@ export default (
       <IndexRoute component={HomePage} />
       <Route path='about-me' component={AboutPage} />
     </Route>
+    <Route path='about-me' component={AboutPage} />
+    <Route path='resume' component={ResumePage} />
   </Route>
 );
