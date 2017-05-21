@@ -11,6 +11,12 @@ import Footer from '../../components/Footer';
 
 import styles from './index.css';
 
+function getPathnameFromLocation(location) {
+  const { pathname } = location;
+  if (pathname[0] === '/') { return pathname; }
+  return `/${pathname}`;
+}
+
 const Page = (
   {
     className,
@@ -27,7 +33,7 @@ const Page = (
 ) => {
   const metaTitle = head.metaTitle ? head.metaTitle : head.title;
 
-  const { pathname } = location;
+  const pathname = getPathnameFromLocation(location);
 
   const meta = [
     { property: 'og:title', content: metaTitle },
