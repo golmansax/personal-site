@@ -1,0 +1,28 @@
+.container {
+  padding-bottom: 1vr;
+}
+
+@media (--desktop-down) {
+  .container {
+    padding-left: 0.5vr;
+    padding-right: 0.5vr;
+  }
+}
+
+.giftContainer {
+  display: flex;
+  margin-bottom: 2vr;
+}
+
+.giftImageContainer {
+  flex: 1;
+  padding-right: 1vr;
+}
+
+.giftImageContainer img {
+  width: 100%;
+}
+
+.giftText {
+  flex: 2;
+}

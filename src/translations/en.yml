@@ -26,6 +26,7 @@ pages:
   portfolio: Portfolio
   resume: Resume
   about: About Me
+  giving: Giving
 
 positions:
   freelanceDeveloper: freelance developer
