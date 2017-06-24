@@ -6,10 +6,10 @@ env:
   - NODE_ENV=production
   - secure: gJ/oIV6viUzpiUZdLJfgYPwF0JQDxCfq/P2Ya1KgvXhuZQJ4ns6zMbp6ccVd4KTOYOY5BXy1NRBuP1vcPyfaZ60bCuLXTMX35+5mbeK4apuC9JK3AaMd+aLLupYN79YDnd839vDhoMppdXYWV+V7Q+HrwKaANST+J5t84LvcYVNbo/4BwWntlaHenacr0Aklhr2d6X4qPTeTSpfalvTBXazSj/lJHqlv0XCXfYez4bMZPMvFPvOPNzrn6fSK0K/i7rKVY5R0vsueKDjQA9RYA7ywCtNDLDW4pza+GhSh2PtgOjlLUVGr24ToFkQfWGN2OaAT0+/+MnQd8fMy7OoIJGOmX6PA9EQtIx5Z9FfjRCiBg+4eaMQN5Ql6CNzE/oDYi+7NhTsfxmhl/0aP5CCjFDVnx+WJTsUyIPmTXQJbnxT3z5YPUWoNFArMKX+3pWIUnezVd4zvn7+R0yDB3Z37T5zZLJwlw1bmIXukMqM115vfGkBp27c5FIMaNmulQ7c/jaJ+A8g+Qhjqzf9WMdKEkPoKBRxmI+vDD0nx/D3tyOaMxGPbiTYjPqeCbJafdwM122pkPwBeP0dP+pptPdqiyXGLllFj5RrSjoSniDZalJt8alqZnM9wJaef60IBxOikQmJnHMtgcAtkxcAqnRvEDl3T3Lw2YzWUSSqHXwUHrJk=
 cache:
+  yarn: true
   directories:
-  - node_modules
+    - node_modules
 install:
-- npm prune
-- npm install
+- yarn install --production=false
 after_success:
 - "./scripts/deploy-gh-pages.sh"
