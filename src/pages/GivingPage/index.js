@@ -4,6 +4,8 @@ import Page from '../../layouts/Page';
 import styles from './index.css';
 import gifts from './gifts';
 
+const BLOG_PATH = '/blog';
+
 const GivingPage = () => (
   <Page
     head={{
@@ -15,16 +17,20 @@ const GivingPage = () => (
     width='narrow'
     >
     <h2>My Giving Pledge</h2>
-    <q>
+    <blockquote className={styles.pledgeQuote}>
       I pledge to make a personally significant donation to support youth
       education every year on my birthday.
-    </q>
+    </blockquote>
     <p>
       When I graduated college, I made a pledge to make a personally significant
       donation every year on my birthday.
-
       I was fortunate enough to benefit from great programs when I was young
-      and I want to support organizations that empower youth.
+      and I want to support organizations that empower youth.{' '}
+      <a href={BLOG_PATH}>Read more about my pledge on my blog</a>.
+    </p>
+    <p>
+      Below are the organizations that I have given to.  I still continue to
+      give to some of them.
     </p>
     {gifts.map((gift) => (
       <div key={gift.year}>

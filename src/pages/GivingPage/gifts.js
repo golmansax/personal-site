@@ -1,6 +1,7 @@
 import freerSackler from './logos/freerSackler.png';
 import hopeChineseSchool from './logos/hopeChineseSchool.png';
 import arml from './logos/arml.jpg';
+import bookbooster from './logos/bookbooster.jpg';
 
 export default [
   {
@@ -19,11 +20,11 @@ export default [
     organization: {
       url: 'https://bayarea.bookbooster.org',
       name: 'BookBooster',
-      image: arml,
+      image: bookbooster,
     },
     reason: 'My friend A.T. and I started BookBooster, an initiative to ' +
       'provide books to schools in low income areas in the San Francisco Bay ' +
-      'Area.'
+      'Area.',
   },
   {
     year: 2015,

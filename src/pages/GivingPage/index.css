@@ -10,19 +10,58 @@
 }
 
 .giftContainer {
-  display: flex;
   margin-bottom: 2vr;
 }
 
 .giftImageContainer {
-  flex: 1;
   padding-right: 1vr;
 }
 
 .giftImageContainer img {
   width: 100%;
+  max-width: 10vr;
+  border: 1px solid var(--colorNeutral);
 }
 
-.giftText {
-  flex: 2;
+@media (--tablet-up) {
+  .giftContainer {
+    display: flex;
+  }
+
+  .giftImageContainer {
+    flex: 1;
+    padding-right: 1vr;
+  }
+
+  .giftImageContainer img {
+    max-width: none;
+  }
+
+  .giftText {
+    flex: 2;
+  }
+}
+
+/* Most of the blockquote styling inspired by https://codepen.io/maxds/pen/DcveB */
+.pledgeQuote {
+  display: block;
+  padding: 1vr 1vr 1vr 2vr;
+  margin: 0 0 1vr;
+  position: relative;
+  border-left: 0.5vr solid var(--colorPrimaryLight);
+  font-weight: bold;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.pledgeQuote::before {
+  content: "\201c"; /* Unicode for left double quote */
+  font-size: 2.5vr;
+  color: var(--colorLightText);
+  position: absolute;
+  left: 0.5vr;
+  top: 1.5vr;
+}
+
+.pledgeQuote::after {
+  content: "";
 }
