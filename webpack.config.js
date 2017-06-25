@@ -90,21 +90,21 @@ export default (config = {}) => {
           */
           // webpack 2
           loader: ExtractTextPlugin.extract({
-            fallbackLoader: "style-loader",
+            fallbackLoader: 'style-loader',
             loader: [
               {
-                loader: "css-loader",
+                loader: 'css-loader',
                 query: {
                   modules: true,
                   localIdentName: (
                     config.production
-                    ? "[hash:base64:5]"
-                    : "[path][name]--[local]--[hash:base64:5]"
+                    ? '[hash:base64:5]'
+                    : '[path][name]--[local]--[hash:base64:5]'
                   ),
                 },
               },
               {
-                loader: "postcss-loader",
+                loader: 'postcss-loader',
                 // query for postcss can't be used right now
                 // https://github.com/postcss/postcss-loader/issues/99
                 // meanwhile, see webpack.LoaderOptionsPlugin in plugins list
@@ -126,11 +126,11 @@ export default (config = {}) => {
           */
           // webpack 2
           loader: ExtractTextPlugin.extract({
-            fallbackLoader: "style-loader",
+            fallbackLoader: 'style-loader',
             loader: [
-              "css-loader",
+              'css-loader',
               {
-                loader: "postcss-loader",
+                loader: 'postcss-loader',
                 // query for postcss can't be used right now
                 // https://github.com/postcss/postcss-loader/issues/99
                 // meanwhile, see webpack.LoaderOptionsPlugin in plugins list
@@ -262,7 +262,7 @@ export default (config = {}) => {
       // new ExtractTextPlugin('[name].[hash].css', { disable: config.dev }),
       // webpack 2
       new ExtractTextPlugin({
-        filename: "[name].[hash].css",
+        filename: '[name].[hash].css',
         disable: config.dev,
       }),
 
@@ -292,6 +292,6 @@ export default (config = {}) => {
     resolveLoader: { root: [path.join(__dirname, 'node_modules')] },
     */
     // webpack 2
-    resolve: { extensions: [ ".js", ".json" ] },
+    resolve: { extensions: ['.js', '.json'] },
   };
 };

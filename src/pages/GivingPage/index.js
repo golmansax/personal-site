@@ -37,11 +37,13 @@ const GivingPage = () => (
         <h3>{gift.year}</h3>
         <div className={styles.giftContainer}>
           <div className={styles.giftImageContainer}>
-            <a href={gift.organization.url}><img src={gift.organization.image} /></a>
+            <a href={gift.organization.url} target='_blank' rel='noopener noreferrer'>
+              <img src={gift.organization.image} alt='' />
+            </a>
           </div>
           <div className={styles.giftText}>
             <h3>
-              <a href={gift.organization.url} target='_blank'>
+              <a href={gift.organization.url} target='_blank' rel='noopener noreferrer'>
                 {gift.organization.name}
               </a>
             </h3>
