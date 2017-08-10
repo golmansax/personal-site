@@ -18,19 +18,24 @@ const GivingPage = () => (
     >
     <h2>My Giving Pledge</h2>
     <blockquote className={styles.pledgeQuote}>
-      I pledge to make a personally significant donation to support youth
-      education every year on my birthday.
+      I pledge to make a personally significant donation every year to support
+      youth education
     </blockquote>
     <p>
-      When I graduated college, I made a pledge to make a personally significant
-      donation every year on my birthday.
-      I was fortunate enough to benefit from great programs when I was young
-      and I want to support organizations that empower youth.{' '}
-      <a href={BLOG_PATH}>Read more about my pledge on my blog</a>.
+      I created this pledge after I realized how lucky I was to be supported
+      by amazing education programs when I was growing up. Those programs
+      played a large role in my personal and professional development,
+      and supporting the education ecosystem is my way of saying thanks.
     </p>
     <p>
-      Below are the organizations that I have given to.  I still continue to
-      give to some of them.
+      To read more about my pledge, <a href={BLOG_PATH}>check out my blog post on this topic</a>.
+    </p>
+    <p>
+      Each year, I choose a new organization to support. So far, I&rsquo;ve chosen
+      smaller organizations in a cause related to how I was supported.
+      For many of these organizations, I continue to support them
+      after my first donation either through further donations or by
+      volunteering my time or work.
     </p>
     {gifts.map((gift) => (
       <div key={gift.year}>
