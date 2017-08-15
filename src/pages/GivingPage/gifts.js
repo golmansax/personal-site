@@ -1,19 +1,23 @@
+import React from 'react';
 import freerSackler from './logos/freerSackler.png';
 import hopeChineseSchool from './logos/hopeChineseSchool.png';
 import arml from './logos/arml.jpg';
 import bookbooster from './logos/bookbooster.jpg';
+import magnet from './logos/magnet.jpg';
 
 export default [
   {
     year: 2017,
     organization: {
       url: 'http://www.mbhsmagnet.org/pipeline',
-      name: 'Magnet Talent Pipeline Project',
-      image: arml,
+      name: 'Magnet STEM Talent Pipeline Project',
+      image: magnet,
     },
-    reason: 'Not only did the Magnet instill in me a hard-working and ' +
-      'technical foundation, it also gave me friends who I still see ' +
-      'every year.',
+    reason: (
+      <div>
+        This is a great program started by a Magnet alum (Samir Paul).
+      </div>
+    ),
   },
   {
     year: 2016,
