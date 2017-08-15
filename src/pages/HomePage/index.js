@@ -14,14 +14,14 @@ const UP_TO = [
     slug: 'boostMySchool',
   },
   {
-    text: 'Thum.io',
-    url: 'https://www.thum.io',
-    slug: 'thumIo',
-  },
-  {
     text: 'BookBooster',
     url: 'https://bayarea.bookbooster.org',
     slug: 'bookBooster',
+  },
+  {
+    text: 'Thum.io',
+    url: 'https://www.thum.io',
+    slug: 'thumIo',
   },
   {
     text: 'Viking Code School',
