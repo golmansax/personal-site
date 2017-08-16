@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { renderMarkdown } from '../../utils/markdown';
 import Page from '../../layouts/Page';
 import styles from './index.css';
 import gifts from './gifts';
@@ -25,14 +26,14 @@ const GivingPage = () => (
       I created this pledge after I realized how lucky I was to be supported
       by amazing education programs when I was growing up. Those programs
       played a large role in my personal and professional development,
-      and supporting the education ecosystem is my way of saying thanks.
+      and investing my own money in the education ecosystem is my way of saying thanks.
     </p>
     <p>
       To read more about my pledge, <a href={BLOG_PATH}>check out my blog post on this topic</a>.
     </p>
     <p>
       Each year, I choose a new organization to support. So far, I&rsquo;ve chosen
-      smaller organizations in a cause related to how I was supported.
+      organizations with a mission related to how I was supported.
       For many of these organizations, I continue to support them
       after my first donation either through further donations or by
       volunteering my time or work.
@@ -52,7 +53,7 @@ const GivingPage = () => (
                 {gift.organization.name}
               </a>
             </h3>
-            <p>{gift.reason}</p>
+            {renderMarkdown(gift.reasonMarkdown)}
           </div>
         </div>
       </div>

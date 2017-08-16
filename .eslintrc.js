@@ -2,6 +2,7 @@ module.exports = {
   extends: 'golmansax',
   rules: {
     'global-require': 0,
+    'import/prefer-default-export': 1,
     'import/no-dynamic-require': 1,
     'max-len': [2, 100],
     'no-process-env': 1,
