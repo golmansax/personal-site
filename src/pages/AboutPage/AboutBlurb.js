@@ -86,11 +86,44 @@ Hobbies.propTypes = {
   intl: intlShape.isRequired,
 };
 
+const Motto = ({ intl }) => {
+  switch (intl.locale) {
+    case 'en':
+      return (
+        <p>
+          My life motto is: have fun, <a href='/giving'>be thankful</a>, and
+          improve the world the best you can.
+        </p>
+      );
+
+    case 'es':
+      return (
+        <p>
+          Mi lema de vida es: divierte, <a href='/giving'>sé agradecido</a>, y
+          mejora el mundo lo mejor que pueda.
+        </p>
+      );
+
+    case 'zh':
+      return (
+        <p>
+          我的人生座右铭是：每天应该尝试有开心，<a href='/giving'>有感激</a>，和改善世界。
+        </p>
+      );
+
+    default: throw new Error(`Invalid locale: ${intl.locale}`);
+  }
+};
+
+Motto.propTypes = {
+  intl: intlShape.isRequired,
+};
+
 const AboutBlurb = ({ intl, className }) => (
   <div className={className}>
     <Intro intl={intl} />
     <Hobbies intl={intl} />
-    <p><FormattedMessage id='about.motto' /></p>
+    <Motto intl={intl} />
   </div>
 );
 

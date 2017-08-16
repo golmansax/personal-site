@@ -26,12 +26,11 @@ pages:
   portfolio: Portafolio
   resume: CV
   about: Sobre Mí
+  giving: Donativos
 
 positions:
   freelanceDeveloper: desarrollador freelance
   courseMentor: mentor del curso
 
 about:
-  motto:
-    'Mi lema de vida es: divierte, sé agradecido, y mejora el mundo lo mejor que pueda.'
   acroyoga: hacer acroyoga

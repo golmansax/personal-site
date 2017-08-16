@@ -26,12 +26,11 @@ pages:
   portfolio: 作品集
   resume: 简历
   about: 关于我
+  giving: 捐款
 
 positions:
   freelanceDeveloper: 自由开发者
   courseMentor: 课程导师
 
 about:
-  motto:
-    我的人生座右铭是：每天应该尝试有开心，有感激，和改善世界。
   acroyoga: 做瑜伽

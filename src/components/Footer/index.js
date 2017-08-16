@@ -32,6 +32,7 @@ const Footer = ({ intl, currentPath }) => {
           <FormattedMessage id='pages.about' />
         </a>
         {' '}&bull; <a href='/portfolio'><FormattedMessage id='pages.portfolio' /></a>
+        {' '}&bull; <a href='/giving'><FormattedMessage id='pages.giving' /></a>
         {' '}&bull; <a href='/resume'><FormattedMessage id='pages.resume' /></a>
         {' '}&bull; <a href='/blog'><FormattedMessage id='footer.blog' /></a>
         {' '}&bull;{' '}
