@@ -5,7 +5,8 @@ import Page from '../../layouts/Page';
 import styles from './index.css';
 import gifts from './gifts';
 
-const BLOG_PATH = '/blog/posts/2017/08/15/my-giving-pledge-and-why-everyone-should-create-one/';
+const BLOG_PATH = '/blog/posts/2017/08/15/' +
+  'my-giving-pledge-and-why-everyone-would-benefit-from-their-own/';
 
 const GivingPage = () => (
   <Page
