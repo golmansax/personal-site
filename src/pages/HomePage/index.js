@@ -24,6 +24,12 @@ const UP_TO = [
     slug: 'thumIo',
   },
   {
+    text: 'Verse',
+    url: 'https://verse.press',
+    slug: 'verse',
+    positionSlug: 'freelanceDeveloper',
+  },
+  {
     text: 'Viking Code School',
     url: 'https://www.vikingcodeschool.com',
     slug: 'viking',
