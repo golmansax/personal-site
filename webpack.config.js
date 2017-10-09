@@ -1,3 +1,4 @@
+import dotenv from 'dotenv';
 import path from 'path';
 
 import webpack from 'webpack';
@@ -7,6 +8,8 @@ import PhenomicLoaderFeedWebpackPlugin
   from 'phenomic/lib/loader-feed-webpack-plugin';
 
 import pkg from './package.json';
+
+dotenv.config();
 
 export default (config = {}) => {
   // hot loading for postcss config
@@ -275,6 +278,10 @@ export default (config = {}) => {
           { compress: { warnings: false } },
         ),
       ],
+
+      new webpack.DefinePlugin({
+        'process.env.GOOGLE_ANALYTICS_ID': `"${process.env.GOOGLE_ANALYTICS_ID}"`,
+      }),
     ],
 
     output: {
