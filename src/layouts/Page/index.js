@@ -35,20 +35,6 @@ const Page = (
 
   const pathname = getPathnameFromLocation(location);
 
-  const meta = [
-    { property: 'og:title', content: metaTitle },
-    {
-      property: 'og:url',
-      content: joinUri(process.env.PHENOMIC_USER_URL, pathname),
-    },
-    { property: 'og:description', content: head.description },
-    { name: 'twitter:card', content: 'summary' },
-    { name: 'twitter:title', content: metaTitle },
-    { name: 'twitter:creator', content: `@${pkg.twitter}` },
-    { name: 'twitter:description', content: head.description },
-    { name: 'description', content: head.description },
-  ];
-
   const locale = getLocale(location.pathname);
   const intl = getIntl(locale);
 
@@ -61,10 +47,19 @@ const Page = (
         })}
         >
         <DefaultHeadMeta />
-        <Helmet
-          title={metaTitle}
-          meta={meta}
-        />
+        <Helmet>
+          <title>{metaTitle}</title>
+          <meta property='og:title' content={metaTitle} />
+          <meta
+            property='og:url'
+            content={joinUri(process.env.PHENOMIC_USER_URL, pathname)}
+          />
+          <meta property='og:description' content={head.description} />
+          <meta name='twitter:card' content='summary' />
+          <meta name='twitter:title' content={metaTitle} />
+          <meta name='twitter:description' content={head.description} />
+          <meta name='description' content={head.description} />
+        </Helmet>
         {showHeader && <Header />}
         <div className={classnames({ [styles.page]: true, [className]: className })}>
           {children}
