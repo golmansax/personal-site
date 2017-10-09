@@ -27,6 +27,21 @@ const DefaultHeadMeta = ({ meta, scripts, intl }, { metadata: { pkg } }) => (
         ...(meta || []),
       ]}
       script={[
+        {
+          async: true,
+          src: `https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS_ID}`,
+        },
+        {
+          dangerouslySetInnerHTML: {
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', '${process.env.GOOGLE_ANALYTICS_ID}');
+            `,
+          },
+        },
         { src: 'https://cdn.polyfill.io/v2/polyfill.min.js' },
         ...(scripts || []),
       ]}
