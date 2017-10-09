@@ -27,7 +27,6 @@ const Page = (
     width,
   },
   {
-    metadata: { pkg },
     location,
   },
 ) => {
