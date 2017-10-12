@@ -43,6 +43,7 @@
 }
 
 /* Unfortunately need <a> to override other styles */
+.upToLink,
 a.upToLink {
   display: inline-block;
   padding: 0.25vr 0.5vr;
@@ -96,6 +97,17 @@ a.upToLink {
     &:hover {
       background-color: #ecf4fb;
     }
+  }
+
+  &.naturalizeUs {
+    border-color: #a61c00;
+    color: #0b5394;
+
+    /*
+    &:hover {
+      color: #80d3fb;
+    }
+    */
   }
 }
 

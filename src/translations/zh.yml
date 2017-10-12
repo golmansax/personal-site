@@ -17,7 +17,8 @@ footer:
   zh: 中文
 
 home:
-  current: '目前的工作和项目：'
+  mainProjects: 工作
+  sideProjects: 项目
   contact: 联系方式
   portfolioIntro: '想看我做了什么？'
   myPortfolio: 我的作品集
@@ -31,6 +32,7 @@ pages:
 positions:
   freelanceDeveloper: 自由开发者
   courseMentor: 课程导师
+  cofounder: 联合创始人
 
 about:
   acroyoga: 做瑜伽

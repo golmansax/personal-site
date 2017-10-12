@@ -17,7 +17,8 @@ footer:
   zh: Mandarin
 
 home:
-  current: 'Current work/projects:'
+  mainProjects: 'Work'
+  sideProjects: 'Side projects'
   contact: Contact
   portfolioIntro: Want to see what I’ve worked on?
   myPortfolio: my portfolio
@@ -31,6 +32,7 @@ pages:
 positions:
   freelanceDeveloper: freelance developer
   courseMentor: course mentor
+  cofounder: co-founder
 
 about:
   acroyoga: do acroyoga

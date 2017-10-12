@@ -17,7 +17,8 @@ footer:
   zh: Chino
 
 home:
-  current: 'Mis trabajos/proyectos actuales:'
+  mainProjects: Trabajo
+  sideProjects: Proyectos
   contact: Contacto
   portfolioIntro: ¿Quieres ver lo que he hecho?
   myPortfolio: mi portafolio
@@ -31,6 +32,7 @@ pages:
 positions:
   freelanceDeveloper: desarrollador freelance
   courseMentor: mentor del curso
+  cofounder: cofundador
 
 about:
   acroyoga: hacer acroyoga

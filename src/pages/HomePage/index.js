@@ -7,7 +7,15 @@ import PortfolioMessage from './PortfolioMessage';
 import Page from '../../layouts/Page';
 import styles from './index.css';
 
-const UP_TO = [
+const MAIN_PROJECTS = [
+  {
+    text: 'NaturalizeUs',
+    slug: 'naturalizeUs',
+    positionSlug: 'cofounder',
+  },
+];
+
+const SIDE_PROJECTS = [
   {
     text: 'BoostMySchool',
     url: 'https://www.boostmyschool.com',
@@ -23,42 +31,55 @@ const UP_TO = [
     url: 'https://www.thum.io',
     slug: 'thumIo',
   },
-  {
-    text: 'Verse',
-    url: 'https://verse.press',
-    slug: 'verse',
-    positionSlug: 'freelanceDeveloper',
-  },
-  {
-    text: 'Viking Code School',
-    url: 'https://www.vikingcodeschool.com',
-    slug: 'viking',
-    positionSlug: 'courseMentor',
-  },
 ];
+
+const Project = ({ text, url, slug, positionSlug }) => (
+  <div>
+    {url ? (
+      <a
+        href={url}
+        target='_blank'
+        rel='noopener noreferrer'
+        className={classnames([styles.upToLink, styles[slug]])}
+        >
+        {text}
+      </a>
+    ) : (
+      <span className={classnames([styles.upToLink, styles[slug]])}>
+        {text}
+      </span>
+    )}
+    {positionSlug && (
+      <small className={styles.position}>
+        <FormattedMessage id={`positions.${positionSlug}`} />
+      </small>
+    )}
+  </div>
+);
+
+Project.propTypes = {
+  text: PropTypes.string.isRequired,
+  url: PropTypes.string,
+  slug: PropTypes.string.isRequired,
+  positionSlug: PropTypes.string,
+};
 
 const HomePageContent = ({ className }) => (
   <div className={className}>
     <div className={styles.contentSection}>
-      <h4 className={styles.contentSectionHeading}><FormattedMessage id='home.current' /></h4>
+      <h4 className={styles.contentSectionHeading}><FormattedMessage id='home.mainProjects' /></h4>
       <div>
-        {UP_TO.map(({ slug, url, text, positionSlug }) => (
-          <div key={url}>
-            <a
-              href={url}
-              target='_blank'
-              rel='noopener noreferrer'
-              className={classnames([styles.upToLink, styles[slug]])}
-              >
-              {text}
-            </a>
-            {positionSlug && (
-              <small className={styles.position}>
-                <FormattedMessage id={`positions.${positionSlug}`} />
-              </small>
-            )}
-          </div>
-          ))}
+        {MAIN_PROJECTS.map((project) => (
+          <Project key={project.url} {...project} />
+        ))}
+      </div>
+    </div>
+    <div className={styles.contentSection}>
+      <h4 className={styles.contentSectionHeading}><FormattedMessage id='home.sideProjects' /></h4>
+      <div>
+        {SIDE_PROJECTS.map((project) => (
+          <Project key={project.url} {...project} />
+        ))}
       </div>
     </div>
     <div className={styles.contentSection}>
