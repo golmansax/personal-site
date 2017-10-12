@@ -36,6 +36,10 @@
 
 .contentSection {
   margin-bottom: 1.5vr;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .contentSectionHeading {
