@@ -10,8 +10,8 @@ const ResumePage = () => (
   <Page
     head={{
       title: 'Resume | Holman Gao',
-      description: 'Up-to-date curriculum vitae/resume/LinkedIn replacement. Includes work, education, ' +
-        'side projects, volunteering, hobbies, languages.',
+      description: 'Up-to-date curriculum vitae/resume/LinkedIn replacement. ' +
+        'Includes work, education, side projects, volunteering, hobbies, languages.',
     }}
     className={styles.container}
     >
