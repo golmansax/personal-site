@@ -14,7 +14,11 @@
     "test": "npm run build"
   },
   "phenomic": {
-    "assets": false,
+    "assets": {
+      "route": "public",
+      "path": "public"
+    },
+    "source": "src",
     "CNAME": true
   },
   "#babel": "webpack-(development|production) are useful for webpack 2, otherwise use development|production",
