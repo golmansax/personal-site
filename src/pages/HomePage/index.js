@@ -2,7 +2,6 @@ import React, { PropTypes } from 'react';
 import classnames from 'classnames';
 import { FormattedMessage } from 'react-intl';
 
-import ContactMessage from './ContactMessage';
 import PortfolioMessage from './PortfolioMessage';
 import Page from '../../layouts/Page';
 import styles from './index.css';
@@ -95,10 +94,6 @@ const HomePageContent = ({ className }) => (
         <FormattedMessage id='home.portfolioIntro' />
       </h4>
       <PortfolioMessage />
-    </div>
-    <div className={styles.contentSection}>
-      <h4 className={styles.contentSectionHeading}><FormattedMessage id='home.contact' /></h4>
-      <ContactMessage />
     </div>
   </div>
   );

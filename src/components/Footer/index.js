@@ -43,6 +43,9 @@ const Footer = ({ intl, currentPath }) => {
         <a href='https://twitter.com/golmansax' target='_blank' rel='noopener noreferrer'>
           <FormattedMessage id='contact.twitter' />
         </a>
+        {' '}&bull; <a href={getIntlPath({ locale, path: '/contact' })}>
+          <FormattedMessage id='pages.contact' />
+        </a>
       </nav>
       <div className={styles.credits}>
         <Credits />

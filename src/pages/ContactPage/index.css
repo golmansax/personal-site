@@ -1,0 +1,5 @@
+@media (--desktop-down) {
+  .container {
+    padding: 0 0.5vr;
+  }
+}
