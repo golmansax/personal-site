@@ -13,12 +13,14 @@ const MAIN_PROJECTS = [
     slug: 'naturalizeUs',
     positionSlug: 'cofounder',
   },
+  /*
   {
     text: 'Verse',
     slug: 'verse',
     url: 'https://verse.press',
     positionSlug: 'freelanceDeveloper',
   },
+  */
 ];
 
 const SIDE_PROJECTS = [
