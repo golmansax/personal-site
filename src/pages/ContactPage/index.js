@@ -9,8 +9,7 @@ const ContactPage = () => (
   <Page
     head={{
       title: 'Contact | Holman Gao',
-      description: 'Up-to-date curriculum vitae/resume/LinkedIn replacement. ' +
-        'Includes work, education, side projects, volunteering, hobbies, languages.',
+      description: 'Reach out to me for whatever reason!',
     }}
     className={styles.container}
     width='narrow'

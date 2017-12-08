@@ -16,14 +16,16 @@ export default (
     <Route path='es'>
       <IndexRoute component={HomePage} />
       <Route path='about-me' component={AboutPage} />
+      <Route path='contact' component={ContactPage} />
     </Route>
     <Route path='zh'>
       <IndexRoute component={HomePage} />
       <Route path='about-me' component={AboutPage} />
+      <Route path='contact' component={ContactPage} />
     </Route>
     <Route path='about-me' component={AboutPage} />
+    <Route path='contact' component={ContactPage} />
     <Route path='resume' component={ResumePage} />
     <Route path='giving' component={GivingPage} />
-    <Route path='contact' component={ContactPage} />
   </Route>
 );
