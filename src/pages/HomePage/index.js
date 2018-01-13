@@ -8,9 +8,14 @@ import styles from './index.css';
 
 const MAIN_PROJECTS = [
   {
+    text: 'BoostMySchool',
+    url: 'https://www.boostmyschool.com',
+    slug: 'boostMySchool',
+  },
+  {
     text: 'NaturalizeUs',
     slug: 'naturalizeUs',
-    positionSlug: 'cofounder',
+    positionSlug: 'freelanceDeveloper',
   },
   {
     text: 'Verse',
@@ -21,11 +26,6 @@ const MAIN_PROJECTS = [
 ];
 
 const SIDE_PROJECTS = [
-  {
-    text: 'BoostMySchool',
-    url: 'https://www.boostmyschool.com',
-    slug: 'boostMySchool',
-  },
   {
     text: 'BookBooster',
     url: 'https://bayarea.bookbooster.org',
