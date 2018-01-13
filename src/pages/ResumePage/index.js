@@ -4,7 +4,7 @@ import { FormattedMessage } from 'react-intl';
 import Page from '../../layouts/Page';
 import styles from './index.css';
 
-const URL = '/public/resumes/gao_holman_resume_20171019.pdf';
+const URL = '/public/resumes/gao_holman_resume_20171020.pdf';
 
 const ResumePage = () => (
   <Page
