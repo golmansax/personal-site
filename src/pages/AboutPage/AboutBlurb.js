@@ -4,6 +4,12 @@ import { injectIntl, intlShape, FormattedMessage } from 'react-intl';
 const ACROYOGA_LINK = 'http://www.sfgate.com/music/slideshow/' +
   'Outside-Lands-2014-91325.php';
 
+const BlogLink = () => (
+  <a href='/blog'>
+    <FormattedMessage id='about.blog' />
+  </a>
+);
+
 const AcroyogaLink = () => (
   <a
     href={ACROYOGA_LINK}
@@ -56,7 +62,7 @@ const Hobbies = ({ intl }) => {
       return (
         <p>
           I currently live in Manhattan.  In my free time, I like to sing and
-          play guitar, go to salsa and bachata socials, play volleyball, and
+          play guitar, <BlogLink />, play volleyball, and
           sometimes even <AcroyogaLink />.
         </p>
       );
@@ -65,7 +71,7 @@ const Hobbies = ({ intl }) => {
       return (
         <p>
           Vivo en Manhattan.  En mi tiempo libre, me gusta cantar y tocar la
-          guitarra, bailar salsa y bachata, jugar voleibol, y
+          guitarra, <BlogLink />, jugar voleibol, y
           a veces <AcroyogaLink />.
         </p>
       );
@@ -74,7 +80,7 @@ const Hobbies = ({ intl }) => {
       return (
         <p>
           我现在住在曼哈顿。
-          当我有空暇，我喜欢唱歌和弹吉他，跳莎莎舞，打排球，和<AcroyogaLink />。
+          当我有空暇，我喜欢唱歌和弹吉他，<BlogLink />，打排球，和<AcroyogaLink />。
         </p>
       );
 
