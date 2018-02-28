@@ -13,8 +13,9 @@ const MAIN_PROJECTS = [
     slug: 'boostMySchool',
   },
   {
-    text: 'NaturalizeUs',
-    slug: 'naturalizeUs',
+    text: 'TowerView Health',
+    slug: 'towerView',
+    url: 'http://towerviewhealth.com/',
     positionSlug: 'freelanceDeveloper',
   },
   {

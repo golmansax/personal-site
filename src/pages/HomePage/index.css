@@ -84,6 +84,17 @@ a.upToLink {
     }
   }
 
+  &.towerView {
+    border-color: #17839a;
+    background-color: color(#fcd83c tint(70%));
+    color: #095684;
+
+    &:hover {
+      background-color: color(#fcd83c tint(50%));
+      border-color: #095684;
+    }
+  }
+
   &.verse {
     background-color: #444;
     color: #f9fafc;
