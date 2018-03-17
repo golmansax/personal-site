@@ -84,6 +84,15 @@ a.upToLink {
     }
   }
 
+  &.mira {
+    border-color: #7ec14c;
+    color: #294352;
+
+    &:hover {
+      background-color: color(#7ec14c tint(85%));
+    }
+  }
+
   &.towerView {
     border-color: #17839a;
     background-color: color(#fcd83c tint(70%));

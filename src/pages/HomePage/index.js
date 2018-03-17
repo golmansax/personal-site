@@ -11,11 +11,12 @@ const MAIN_PROJECTS = [
     text: 'BoostMySchool',
     url: 'https://www.boostmyschool.com',
     slug: 'boostMySchool',
+    positionSlug: 'cofounder',
   },
   {
-    text: 'TowerView Health',
-    slug: 'towerView',
-    url: 'http://towerviewhealth.com/',
+    text: 'Mira Financial',
+    slug: 'mira',
+    url: 'https://www.mirafinancial.com/',
     positionSlug: 'freelanceDeveloper',
   },
   {
