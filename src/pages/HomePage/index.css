@@ -57,11 +57,11 @@ a.upToLink {
   text-decoration: none;
 
   &.boostMySchool {
-    background-color: #5f867f;
+    background-color: #00bc70;
     color: var(--colorInvertedText);
 
     &:hover {
-      background-color: #437168;
+      background-color: #00a05f;
       color: var(--colorInvertedText);
     }
   }
@@ -120,6 +120,16 @@ a.upToLink {
 
     &:hover {
       background-color: #ecf4fb;
+    }
+  }
+
+  &.selected {
+    background-color: #f48022;
+    color: var(--colorInvertedText);
+
+    &:hover {
+      background-color: color(#f48022 shade(15%));
+      color: var(--colorInvertedText);
     }
   }
 

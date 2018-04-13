@@ -25,6 +25,12 @@ const MAIN_PROJECTS = [
     url: 'https://verse.press',
     positionSlug: 'freelanceDeveloper',
   },
+  {
+    text: 'Selected',
+    slug: 'selected',
+    url: 'https://www.getselected.com/',
+    positionSlug: 'consultant',
+  },
 ];
 
 const SIDE_PROJECTS = [
