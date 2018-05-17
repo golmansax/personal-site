@@ -14,12 +14,6 @@ const MAIN_PROJECTS = [
     positionSlug: 'cofounder',
   },
   {
-    text: 'Mira Financial',
-    slug: 'mira',
-    url: 'https://www.mirafinancial.com/',
-    positionSlug: 'freelanceDeveloper',
-  },
-  {
     text: 'Verse',
     slug: 'verse',
     url: 'https://verse.press',
