@@ -143,6 +143,16 @@ a.upToLink {
     }
     */
   }
+
+  &.beam {
+    border-color: #052541;
+    background-color: #052541;
+    color: white;
+
+    &:hover {
+      color: color(#052541 tint(70%));
+    }
+  }
 }
 
 .position {

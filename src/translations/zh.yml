@@ -18,7 +18,7 @@ footer:
 
 home:
   mainProjects: 工作
-  sideProjects: 项目
+  sideProjects: 工作之外
   contact: 联系方式
   portfolioIntro: '想看我做了什么？'
   myPortfolio: 我的作品集
@@ -34,6 +34,7 @@ positions:
   courseMentor: 课程导师
   cofounder: 联合创始人
   consultant: 顾问
+  volunteer: 志愿者
 
 about:
   acroyoga: 做瑜伽

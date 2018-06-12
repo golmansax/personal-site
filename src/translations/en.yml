@@ -18,7 +18,7 @@ footer:
 
 home:
   mainProjects: 'Work'
-  sideProjects: 'Side projects'
+  sideProjects: 'Outside of work'
   contact: Contact
   portfolioIntro: Want to see what I’ve worked on?
   myPortfolio: my portfolio
@@ -35,6 +35,7 @@ positions:
   freelanceDeveloper: freelance developer
   courseMentor: course mentor
   cofounder: co-founder
+  volunteer: volunteer
 
 about:
   acroyoga: do acroyoga

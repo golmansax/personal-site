@@ -32,11 +32,19 @@ const SIDE_PROJECTS = [
     text: 'BookBooster',
     url: 'https://bayarea.bookbooster.org',
     slug: 'bookBooster',
+    positionSlug: 'cofounder',
   },
   {
     text: 'Thum.io',
     url: 'https://www.thum.io',
     slug: 'thumIo',
+    positionSlug: 'cofounder',
+  },
+  {
+    text: 'BEAM',
+    slug: 'beam',
+    url: 'https://www.beammath.org/',
+    positionSlug: 'volunteer',
   },
 ];
 

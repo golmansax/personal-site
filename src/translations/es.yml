@@ -18,7 +18,7 @@ footer:
 
 home:
   mainProjects: Trabajo
-  sideProjects: Proyectos
+  sideProjects: Fuera del trabajo
   contact: Contacto
   portfolioIntro: ¿Quieres ver lo que he hecho?
   myPortfolio: mi portafolio
@@ -34,6 +34,7 @@ positions:
   courseMentor: mentor del curso
   cofounder: cofundador
   consultant: consultor
+  volunteer: voluntario
 
 about:
   acroyoga: hacer acroyoga
