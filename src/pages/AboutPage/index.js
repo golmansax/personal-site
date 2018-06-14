@@ -2,7 +2,7 @@ import React from 'react';
 import { FormattedMessage } from 'react-intl';
 
 import Page from '../../layouts/Page';
-import portrait from './portrait_2017-01-27.jpg';
+import portrait from './portrait_2018-06-13.jpg';
 import AboutBlurb from './AboutBlurb';
 import styles from './index.css';
 
