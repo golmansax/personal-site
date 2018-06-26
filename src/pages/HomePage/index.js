@@ -14,16 +14,10 @@ const MAIN_PROJECTS = [
     positionSlug: 'cofounder',
   },
   {
-    text: 'Verse',
-    slug: 'verse',
-    url: 'https://verse.press',
+    text: 'CaptivateIQ',
+    slug: 'captivate',
+    url: 'https://www.captivateiq.com/',
     positionSlug: 'freelanceDeveloper',
-  },
-  {
-    text: 'Selected',
-    slug: 'selected',
-    url: 'https://www.getselected.com/',
-    positionSlug: 'consultant',
   },
 ];
 

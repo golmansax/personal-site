@@ -153,6 +153,17 @@ a.upToLink {
       color: color(#052541 tint(70%));
     }
   }
+
+  &.captivate {
+    border-color: #1abc9c;
+    background-color: #1abc9c;
+    color: white;
+
+    &:hover {
+      background-color: #16a085;
+      border-color: #16a085;
+    }
+  }
 }
 
 .position {
