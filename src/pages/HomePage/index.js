@@ -24,7 +24,7 @@ const MAIN_PROJECTS = [
 const SIDE_PROJECTS = [
   {
     text: 'BookBooster',
-    url: 'https://bayarea.bookbooster.org',
+    url: 'https://www.bookbooster.us',
     slug: 'bookBooster',
     positionSlug: 'cofounder',
   },

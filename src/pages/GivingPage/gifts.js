@@ -27,13 +27,13 @@ export default [
   {
     year: 2016,
     organization: {
-      url: 'https://bayarea.bookbooster.org',
+      url: 'https://www.bookbooster.us',
       name: 'BookBooster',
       image: bookbooster,
     },
     reasonMarkdown: [
       'In summer 2016, my friend [A.T.](https://twitter.com/atmcwilliams) and I founded',
-      '[BookBooster](https://bayarea.bookbooster.org), an initiative',
+      '[BookBooster](https://www.bookbooster.us), an initiative',
       'to provide books to schools in low income areas.',
       'After learning about the correlation between income, books, and literacy,',
       'I wanted to get involved to support kids who wanted books but did not have access to them.',
