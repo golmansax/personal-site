@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { renderMarkdown } from '../../utils/markdown';
 import Page from '../../layouts/Page';
+import Gift from './Gift';
 import styles from './index.css';
 import gifts from './gifts';
 
@@ -27,37 +27,27 @@ const GivingPage = () => (
       I created this pledge after I realized how lucky I was to be supported
       by amazing education programs when I was growing up. Those programs
       played a large role in my personal and professional development,
-      and investing my own money in the education ecosystem is my way of saying thanks.
+      and investing my earnings in the education ecosystem is my way of saying thanks.
     </p>
     <p>
-      To read more about my pledge, <a href={BLOG_PATH}>check out my blog post on this topic</a>.
+      When I started this pledge, I donated to a new organization every year so
+      that I would continually discover awesome organizations in this space.
+      However, I realized that donating one year and not the next is not the best way
+      to support organizations that prefer to have a consistent source of
+      donations.  Thus, I decided to choose a few organizations to give monthly to
+      and support the rest by volunteering my time, work, or network.
     </p>
     <p>
-      Each year, I choose a new organization to support. So far, I&rsquo;ve chosen
-      organizations with a mission related to how I was supported.
-      For many of these organizations, I continue to support them
-      after my first donation either through further donations or by
-      volunteering my time or work.
+      To read more about how my pledge started,{' '}
+      <a href={BLOG_PATH} target="_blank">check out my blog post on this topic</a>.
     </p>
-    {gifts.map((gift) => (
-      <div key={gift.year}>
-        <h3>{gift.year}</h3>
-        <div className={styles.giftContainer}>
-          <div className={styles.giftImageContainer}>
-            <a href={gift.organization.url} target='_blank' rel='noopener noreferrer'>
-              <img src={gift.organization.image} alt='' />
-            </a>
-          </div>
-          <div className={styles.giftText}>
-            <h3>
-              <a href={gift.organization.url} target='_blank' rel='noopener noreferrer'>
-                {gift.organization.name}
-              </a>
-            </h3>
-            {renderMarkdown(gift.reasonMarkdown)}
-          </div>
-        </div>
-      </div>
+    <h3>Actively Supporting</h3>
+    {gifts.filter(({ current }) => current).map((gift) => (
+      <Gift key={gift.organization.name} gift={gift} />
+    ))}
+    <h3>Previously Supported</h3>
+    {gifts.filter(({ current }) => !current).map((gift) => (
+      <Gift key={gift.organization.name} gift={gift} />
     ))}
   </Page>
 );

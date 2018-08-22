@@ -3,17 +3,39 @@ import hopeChineseSchool from './logos/hopeChineseSchool.png';
 import arml from './logos/arml.jpg';
 import bookbooster from './logos/bookbooster.jpg';
 import magnet from './logos/magnet.jpg';
+import beam from './logos/beam.jpg';
 
 const BOOKBOOSTER_LINK = 'https://medium.com/@albertmcwilliams3/' +
   'book-deserts-and-the-widening-literacy-gap-a8ce2e83ceb6';
 
 export default [
   {
+    year: 2018,
+    current: true,
+    organization: {
+      url: 'https://www.beammath.org/',
+      name: 'Bridge to Enter Advanced Mathematics',
+      image: beam,
+      imagePadding: true,
+    },
+    reasonMarkdown: [
+      'I started volunteering with BEAM when I moved to New York and was',
+      'immediately impressed with the organization’s mission to create a community',
+      'around an interest in math rather than a focus on test prep.\n\n',
+      'Students talk about how they felt like outsiders until they participated',
+      'in the BEAM summer camp, where they became friends with folks who like them, actually',
+      'enjoy math. I could immediately tell that this program changes lives and',
+      'I’m happy to support them in any way I can.',
+    ].join(' '),
+  },
+  {
     year: 2017,
+    current: true,
     organization: {
       url: 'http://www.mbhsmagnet.org/pipeline',
       name: 'Magnet STEM Talent Pipeline Project',
       image: magnet,
+      imagePadding: true,
     },
     reasonMarkdown: [
       'I was lucky enough to attend math/science Magnet programs throughout',
