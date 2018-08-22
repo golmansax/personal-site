@@ -22,12 +22,14 @@ const MAIN_PROJECTS = [
 ];
 
 const SIDE_PROJECTS = [
+  /*
   {
     text: 'BookBooster',
     url: 'https://www.bookbooster.us',
     slug: 'bookBooster',
     positionSlug: 'cofounder',
   },
+  */
   {
     text: 'Thum.io',
     url: 'https://www.thum.io',
