@@ -39,7 +39,9 @@ const GivingPage = () => (
     </p>
     <p>
       To read more about how my pledge started,{' '}
-      <a href={BLOG_PATH} target="_blank">check out my blog post on this topic</a>.
+      <a href={BLOG_PATH} target='_blank' rel='noopener noreferrer'>
+        check out my blog post on this topic
+      </a>.
     </p>
     <h3>Actively Supporting</h3>
     {gifts.filter(({ current }) => current).map((gift) => (

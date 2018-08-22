@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
 import { renderMarkdown } from '../../utils/markdown';
@@ -12,7 +13,7 @@ const Gift = ({ gift }) => (
         className={classnames(styles.giftImageContainer, {
           [styles.imagePadding]: gift.organization.imagePadding,
         })}
-      >
+        >
         <a href={gift.organization.url} target='_blank' rel='noopener noreferrer'>
           <img src={gift.organization.image} alt='' />
         </a>
@@ -28,5 +29,9 @@ const Gift = ({ gift }) => (
     </div>
   </div>
 );
+
+Gift.propTypes = {
+  gift: PropTypes.object.isRequired,
+};
 
 export default Gift;
