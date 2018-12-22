@@ -11,7 +11,7 @@ const MAIN_PROJECTS = [
     text: 'BoostMySchool',
     url: 'https://www.boostmyschool.com',
     slug: 'boostMySchool',
-    positionSlug: 'cofounder',
+    positionSlug: 'founder',
   },
   {
     text: 'CaptivateIQ',
