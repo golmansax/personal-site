@@ -19,7 +19,6 @@ footer:
 home:
   mainProjects: 现在的工作
   sideProjects: 工作之外
-  contact: 联系方式
   portfolioIntro: '想看我做了什么？'
   myPortfolio: 我的作品集
 
@@ -28,7 +27,7 @@ pages:
   resume: 简历
   about: 关于我
   giving: 捐款
-  contact: 交往
+  contact: 联系方式
 
 positions:
   freelanceDeveloper: 自由开发者
