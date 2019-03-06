@@ -1,10 +1,9 @@
 import React from 'react';
-import { injectIntl, intlShape, FormattedMessage } from 'react-intl';
+import { injectIntl, intlShape } from 'react-intl';
 
 import portraitProfessional from './portrait_professional.jpg';
 import portraitOnBench from './portrait_on_bench.jpg';
 import portraitSide from './portrait_side.jpg';
-import styles from './index.css';
 
 const AboutImage = ({ intl }) => {
   const source = (() => {
@@ -19,6 +18,10 @@ const AboutImage = ({ intl }) => {
   return (
     <img src={source} alt='' />
   );
+};
+
+AboutImage.propTypes = {
+  intl: intlShape.isRequired,
 };
 
 export default injectIntl(AboutImage);
