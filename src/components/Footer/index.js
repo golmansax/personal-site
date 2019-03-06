@@ -6,7 +6,7 @@ import { getPathWithoutIntl, getIntlPath } from '../../utils/intl';
 import styles from './index.css';
 
 const PATHS_WITH_LOCALE = new Set([
-  '/', '/about-me',
+  '/', '/about-me', '/about-me/', '/contact', '/contact/',
 ]);
 
 const Footer = ({ intl, currentPath }) => {
