@@ -2,8 +2,8 @@ import React from 'react';
 import { FormattedMessage } from 'react-intl';
 
 import Page from '../../layouts/Page';
-import portrait from './portrait_2018-06-13.jpg';
 import AboutBlurb from './AboutBlurb';
+import AboutImage from './AboutImage';
 import styles from './index.css';
 
 const AboutPage = () => (
@@ -19,7 +19,7 @@ const AboutPage = () => (
     <h2><FormattedMessage id='pages.about' /></h2>
     <div className={styles.contentContainer}>
       <div className={styles.leftColumn}>
-        <img src={portrait} alt='' />
+        <AboutImage />
       </div>
       <AboutBlurb className={styles.rightColumn} />
     </div>
