@@ -27,7 +27,7 @@ const Intro = ({ intl }) => {
     case 'en':
       return (
         <p>
-          Hi! My name is Holman, I am an entrepreneur and freelance developer
+          Hi! My name is Holman, I am a software engineer turned entrepreneur
           with a love for education.  See examples of my work on <MyPortfolio />.
         </p>
       );
@@ -35,15 +35,15 @@ const Intro = ({ intl }) => {
     case 'es':
       return (
         <p>
-          ¡Hola! Me llamo Holman, soy empresario y desarrollador freelance con
-          amor por educación.  Mira a <MyPortfolio /> por ejemplos de mi trabajo.
+          ¡Hola! Me llamo Holman, soy ingeniero de software convertido en empresario
+          con amor por educación.  Mira a <MyPortfolio /> por ejemplos de mi trabajo.
         </p>
       );
 
     case 'zh':
       return (
         <p>
-          你好！我叫高鸿鸣。我是一个企业家和自由职业者。
+          你好！我叫高鸿鸣。我是软件工程师背景的创业者。
           去我的<MyPortfolio />如果你想看我我做了什么。
         </p>
       );

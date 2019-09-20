@@ -10,8 +10,8 @@ const AboutPage = () => (
   <Page
     head={{
       title: 'About Me | Holman Gao',
-      description: 'A little bit about Holman Gao, entrepreneur and freelance ' +
-        'developer living in New York',
+      description: 'A little bit about Holman Gao, software engineer turned entrepreneur ' +
+        'living in New York',
     }}
     className={styles.container}
     width='narrow'

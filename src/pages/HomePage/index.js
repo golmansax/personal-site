@@ -110,8 +110,8 @@ const HomePage = (props) => (
   <Page
     {...props}
     head={{
-      title: 'Holman Gao – entrepreneur | developer | in New York',
-      description: 'Personal site of Holman Gao, entrepreneur and freelance developer ' +
+      title: 'Holman Gao – entrepreneur | sofware engineer | in New York',
+      description: 'Personal site of Holman Gao, software engineer turned entrepreneur ' +
         'with a love for education. University of Maryland and Blair Magnet alum.',
     }}
     >
