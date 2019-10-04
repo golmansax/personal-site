@@ -62,7 +62,7 @@ const Hobbies = ({ intl }) => {
       return (
         <p>
           I currently live in Manhattan.  In my free time, I like to sing and
-          play guitar, <BlogLink />, play volleyball, and
+          play guitar, <BlogLink />, play pick-up volleyball, and
           sometimes even <AcroyogaLink />.
         </p>
       );
