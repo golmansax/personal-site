@@ -1,14 +1,15 @@
 import React, { PropTypes } from 'react';
 import { injectIntl, intlShape, FormattedMessage } from 'react-intl';
 
-const ACROYOGA_LINK = 'http://www.sfgate.com/music/slideshow/' +
-  'Outside-Lands-2014-91325.php';
-
 const BlogLink = () => (
   <a href='/blog'>
     <FormattedMessage id='about.blog' />
   </a>
 );
+
+/*
+const ACROYOGA_LINK = 'http://www.sfgate.com/music/slideshow/' +
+  'Outside-Lands-2014-91325.php';
 
 const AcroyogaLink = () => (
   <a
@@ -19,6 +20,7 @@ const AcroyogaLink = () => (
     <FormattedMessage id='about.acroyoga' />
   </a>
 );
+*/
 
 const MyPortfolio = () => <a href='/portfolio'><FormattedMessage id='home.myPortfolio' /></a>;
 
