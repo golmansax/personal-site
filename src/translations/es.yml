@@ -32,7 +32,8 @@ pages:
 positions:
   freelanceDeveloper: desarrollador freelance
   courseMentor: mentor del curso
-  founder: fundador
+  founderCeo: fundador y director ejecutivo
+  cofounder: cofundador
   consultant: consultor
   volunteer: voluntario
 
