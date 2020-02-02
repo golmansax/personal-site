@@ -40,6 +40,10 @@ const Footer = ({ intl, currentPath }) => {
           GitHub
         </a>
         {' '}&bull;{' '}
+        <a href='https://www.linkedin.com/in/holman-gao/' target='_blank' rel='noopener noreferrer'>
+          LinkedIn
+        </a>
+        {' '}&bull;{' '}
         <a href='https://twitter.com/golmansax' target='_blank' rel='noopener noreferrer'>
           <FormattedMessage id='contact.twitter' />
         </a>
