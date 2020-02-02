@@ -5,8 +5,8 @@ const Email = () => (
   <a href='mailto:holman@golmansax.com'><FormattedMessage id='contact.email' /></a>
 );
 
-const Twitter = () => (
-  <a href='https://twitter.com/golmansax' target='_blank' rel='noopener noreferrer'>
+const LinkedIn = () => (
+  <a href='https://www.linkedin.com/in/holman-gao/' target='_blank' rel='noopener noreferrer'>
     <FormattedMessage id='contact.twitter' />
   </a>
 );
@@ -16,21 +16,21 @@ const ContactMessage = ({ intl }) => {
     case 'en':
       return (
         <div>
-          Reach out via <Email /> or <Twitter />. I read every message, I promise!
+          Reach out via <Email /> or <LinkedIn />. I read every message, I promise!
         </div>
       );
 
     case 'es':
       return (
         <div>
-          Contáctame por <Email /> o <Twitter />. Prometo que leeré tu mensaje!
+          Contáctame por <Email /> o <LinkedIn />. Prometo que leeré tu mensaje!
         </div>
       );
 
     case 'zh':
       return (
         <div>
-          请用<Email />或者<Twitter />跟我联系，很期待收到您的信息！
+          请用<Email />或者<LinkedIn />跟我联系，很期待收到您的信息！
         </div>
       );
 
