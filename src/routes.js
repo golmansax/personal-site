@@ -6,7 +6,7 @@ import './highlight.global.css';
 
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
-import ResumePage from './pages/ResumePage';
+// import ResumePage from './pages/ResumePage';
 import GivingPage from './pages/GivingPage';
 import ContactPage from './pages/ContactPage';
 
@@ -25,7 +25,7 @@ export default (
     </Route>
     <Route path='about-me' component={AboutPage} />
     <Route path='contact' component={ContactPage} />
-    <Route path='resume' component={ResumePage} />
+    {/* <Route path='resume' component={ResumePage} /> */}
     <Route path='giving' component={GivingPage} />
   </Route>
 );

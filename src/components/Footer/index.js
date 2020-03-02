@@ -33,7 +33,7 @@ const Footer = ({ intl, currentPath }) => {
         </a>
         {' '}&bull; <a href='/portfolio'><FormattedMessage id='pages.portfolio' /></a>
         {' '}&bull; <a href='/giving'><FormattedMessage id='pages.giving' /></a>
-        {' '}&bull; <a href='/resume'><FormattedMessage id='pages.resume' /></a>
+        {/* {' '}&bull; <a href='/resume'><FormattedMessage id='pages.resume' /></a> */}
         {' '}&bull; <a href='/blog'><FormattedMessage id='footer.blog' /></a>
         {' '}&bull;{' '}
         <a href='https://github.com/golmansax' target='_blank' rel='noopener noreferrer'>
