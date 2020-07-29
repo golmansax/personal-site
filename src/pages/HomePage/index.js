@@ -13,12 +13,6 @@ const MAIN_PROJECTS = [
     slug: 'boostMySchool',
     positionSlug: 'founderCeo',
   },
-  {
-    text: 'CaptivateIQ',
-    slug: 'captivate',
-    url: 'https://www.captivateiq.com/',
-    positionSlug: 'freelanceDeveloper',
-  },
 ];
 
 const SIDE_PROJECTS = [
@@ -41,6 +35,12 @@ const SIDE_PROJECTS = [
     slug: 'beam',
     url: 'https://www.beammath.org/',
     positionSlug: 'volunteer',
+  },
+  {
+    text: 'FirstGeneration',
+    url: 'https://www.firstgeneration.vc/',
+    slug: 'firstGeneration',
+    positionSlug: 'member',
   },
 ];
 
