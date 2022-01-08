@@ -4,9 +4,7 @@ contact:
 
 header:
   name: Holman Gao
-  job1: empresario
-  job2: ingeniero de software
-  location: en Nueva York
+  tagline: emprendedor de la educación en NYC
 
 footer:
   home: Portada
@@ -30,13 +28,13 @@ pages:
   contact: Contacto
 
 positions:
-  freelanceDeveloper: desarrollador freelance
-  courseMentor: mentor del curso
-  founderCeo: fundador y director ejecutivo
-  cofounder: cofundador
-  consultant: consultor
-  volunteer: voluntario
-  member: miembro
+  freelanceDeveloper: Desarrollador Freelance
+  courseMentor: Mentor del Curso
+  founderCeo: Fundador y CEO
+  cofounder: Cofundador
+  consultant: Consultor
+  volunteer: Voluntario
+  member: Miembro
 
 about:
   acroyoga: hacer acroyoga

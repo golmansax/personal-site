@@ -10,9 +10,7 @@ const Header = ({ intl }) => (
       <a href={getIntlPath({ locale: intl.locale, path: '/' })} className={styles.link}>
         <FormattedMessage id='header.name' />
         <small className={styles.subHeading}>
-          <FormattedMessage id='header.job1' /> |{' '}
-          <FormattedMessage id='header.job2' /> |{' '}
-          <span className={styles.chunk}><FormattedMessage id='header.location' /></span>
+          <FormattedMessage id='header.tagline' />
         </small>
       </a>
     </h1>

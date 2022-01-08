@@ -30,15 +30,15 @@ const Intro = ({ intl }) => {
       return (
         <p>
           Hi! My name is Holman, I am a software engineer turned entrepreneur
-          with a love for education.  See examples of my work on <MyPortfolio />.
+          with a passion for education.  See examples of my work on <MyPortfolio />.
         </p>
       );
 
     case 'es':
       return (
         <p>
-          ¡Hola! Me llamo Holman, soy ingeniero de software convertido en empresario
-          con amor por educación.  Mira a <MyPortfolio /> por ejemplos de mi trabajo.
+          ¡Hola! Me llamo Holman, soy ingeniero de software convertido en emprendedor
+          con pasión por la educación.  Mira a <MyPortfolio /> por ejemplos de mi trabajo.
         </p>
       );
 
@@ -63,7 +63,7 @@ const Hobbies = ({ intl }) => {
     case 'en':
       return (
         <p>
-          I currently live in Manhattan.  In my free time, I like to sing and
+          I live in Manhattan.  In my free time, I like to sing and
           play guitar, play pick-up volleyball, and <BlogLink />.
         </p>
       );
@@ -79,7 +79,7 @@ const Hobbies = ({ intl }) => {
     case 'zh':
       return (
         <p>
-          我现在住在曼哈顿。
+          我住在曼哈顿。
           当我有空暇，我喜欢唱歌和弹吉他，打排球，和<BlogLink />。
         </p>
       );
