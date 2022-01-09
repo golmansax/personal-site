@@ -5,7 +5,7 @@
   "twitter": "golmansax",
   "repository": "https://github.com/golmansax/personal-site.git",
   "engines": {
-    "node": "14.x.x"
+    "node": "8.x.x"
   },
   "scripts": {
     "lint:js": "eslint --ignore-path .gitignore --fix .",
@@ -121,7 +121,7 @@
     "marksy": "^5.0.0",
     "node-sass": "^4.14.0",
     "npm-run-all": "^1.7.0",
-    "phenomic": "^0.21.0",
+    "phenomic": "^0.21.3",
     "postcss-browser-reporter": "^0.4.0",
     "postcss-cssnext": "^2.4.0",
     "postcss-lh": "^1.1.4",
