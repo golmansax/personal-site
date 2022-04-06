@@ -57,12 +57,11 @@ a.upToLink {
   text-decoration: none;
 
   &.boostMySchool {
-    background-color: #00bc70;
-    color: var(--colorInvertedText);
+    background-color: #abffc1; /* Tea green */
+    color: #044d5e; /* Midnight green */
 
     &:hover {
-      background-color: #00a05f;
-      color: var(--colorInvertedText);
+      background-color: color(#abffc1 shade(15%)); /* Tea green */
     }
   }
 
