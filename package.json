@@ -115,7 +115,7 @@
     "eslint-plugin-react": "^6.4.0",
     "extract-text-webpack-plugin": "^2.0.0",
     "file-loader": "^0.9.0",
-    "flat": "^2.0.1",
+    "flat": "^5.0.1",
     "gh-pages": "^2.0.0",
     "history": "^2.0.0",
     "json-loader": "^0.5.4",
