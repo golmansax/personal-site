@@ -2,6 +2,8 @@ import React, { PropTypes } from 'react';
 import { injectIntl, intlShape } from 'react-intl';
 import Helmet from 'react-helmet';
 
+import favicon from './favicon.png';
+
 const DefaultHeadMeta = ({ meta, scripts, intl }, { metadata: { pkg } }) => (
   <Helmet htmlAttributes={{ lang: intl.locale }}>
     <script
@@ -19,12 +21,12 @@ const DefaultHeadMeta = ({ meta, scripts, intl }, { metadata: { pkg } }) => (
     </script>
     <link
       rel='icon'
-      href='https://www.gravatar.com/avatar/f14bfcfb11c5a367dc8c88bc3dd43189?s=16'
+      href={favicon}
     />
     <link
       type='text/css'
       rel='stylesheet'
-      href='https://fonts.googleapis.com/css?family=Libre+Franklin:400,700'
+      href='https://fonts.googleapis.com/css?family=Outfit:400,600'
     />
     <meta
       name='generator'

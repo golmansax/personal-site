@@ -25,16 +25,16 @@ module.exports = (config) => [
 
           // Colors
           colorPrimaryDark: '#005139',
-          colorPrimary: '#198565',
+          colorPrimary: '#001C3C', // Prussian
           colorPrimaryLight: '#55AA90',
           colorSecondaryDark: '#22846C',
-          colorSecondary: '#46BE77',
+          colorSecondary: '#EA0029', // Ruby
           colorNeutralDark: '#111',
           colorNeutral: '#8C8D91',
           colorNeutralLight: '#FBFCFC',
-          colorText: '#555',
+          colorText: '#001C3C', // Prussian
           colorLightText: '#888',
-          colorInvertedText: 'rgb(251, 254, 253)',
+          colorInvertedText: '#F2F2F2', // Titanium
         },
       },
     },
