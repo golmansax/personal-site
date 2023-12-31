@@ -24,10 +24,10 @@ module.exports = (config) => [
           radiusDefault: '2px',
 
           // Colors
-          colorPrimaryDark: '#005139',
+          colorPrimaryDark: '#001833',
           colorPrimary: '#001C3C', // Prussian
-          colorPrimaryLight: '#55AA90',
-          colorSecondaryDark: '#22846C',
+          colorPrimaryLight: '#003b80',
+          colorSecondaryDark: '#c70023',
           colorSecondary: '#EA0029', // Ruby
           colorNeutralDark: '#111',
           colorNeutral: '#8C8D91',
