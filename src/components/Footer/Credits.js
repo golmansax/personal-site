@@ -5,8 +5,8 @@ const Justin = () => (
   <a href='http://jvenezue.la/' target='_blank' rel='noopener noreferrer'>Justin Venezuela</a>
 );
 
-const Ali = () => (
-  <a href='http://alispagnola.com/' target='_blank' rel='noopener noreferrer'>Ali Spagnola</a>
+const Alf = () => (
+  <a href='https://www.catronaut.com/' target='_blank' rel='noopener noreferrer'>Alf Gadberry</a>
 );
 
 const Credits = ({ intl }) => {
@@ -14,21 +14,21 @@ const Credits = ({ intl }) => {
     case 'en':
       return (
         <small>
-          Credits: photos by <Justin />, saxophone icon by <Ali />
+          Credits: photos by <Justin />, icon by <Alf />
         </small>
       );
 
     case 'es':
       return (
         <small>
-          Atribución: las fotos por <Justin />, el icono de saxofón por <Ali />
+          Atribución: las fotos por <Justin />, el icono por <Alf />
         </small>
       );
 
     case 'zh':
       return (
         <small>
-          致谢：<Justin /> 做的照片，<Ali /> 做的萨克斯图标
+          致谢：<Justin /> 做的照片，<Alf /> 做的图标
         </small>
       );
 
