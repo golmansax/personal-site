@@ -7,7 +7,7 @@ const Email = () => (
 
 const LinkedIn = () => (
   <a href='https://www.linkedin.com/in/holman-gao/' target='_blank' rel='noopener noreferrer'>
-    <FormattedMessage id='contact.twitter' />
+    LinkedIn
   </a>
 );
 
