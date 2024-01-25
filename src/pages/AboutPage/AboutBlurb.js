@@ -29,24 +29,26 @@ const Intro = ({ intl }) => {
     case 'en':
       return (
         <p>
-          Hi! My name is Holman, I am a software engineer turned entrepreneur
-          with a passion for education.  See examples of my work on <MyPortfolio />.
+          Hi! I’m Holman, an entrepeneur with a passion for education.
+          Previously I was an engineer at startups, see
+          examples of my work on <MyPortfolio />.
         </p>
       );
 
     case 'es':
       return (
         <p>
-          ¡Hola! Me llamo Holman, soy ingeniero de software convertido en emprendedor
-          con pasión por la educación.  Mira a <MyPortfolio /> por ejemplos de mi trabajo.
+          ¡Hola! Soy Holman, un emprendedor con pasión por la educación.
+          Previamente era ingeniero de software en startups,
+          mira a <MyPortfolio /> por ejemplos de mi trabajo.
         </p>
       );
 
     case 'zh':
       return (
         <p>
-          你好！我叫高鸿鸣。我是软件工程师背景的创业者。
-          去我的<MyPortfolio />如果你想看我我做了什么。
+          你好！我是高鸿鸣，软件背景的创业者。
+          去我的<MyPortfolio />如果你想看我做了什么。
         </p>
       );
 
@@ -63,16 +65,18 @@ const Hobbies = ({ intl }) => {
     case 'en':
       return (
         <p>
-          I live in Manhattan.  In my free time, I like to sing and
-          play guitar, play sports (volleyball, pickleball, tennis), and <BlogLink />.
+          I live in Manhattan.  In my free time, I like to play sports
+          (volleyball, pickleball, tennis), make music with friends (guitar, karaoke),
+          and <BlogLink />.
         </p>
       );
 
     case 'es':
       return (
         <p>
-          Vivo en Manhattan.  En mi tiempo libre, me gusta cantar y tocar la
-          guitarra, jugar deporte (voleibol, pickleball, tenis) y <BlogLink />.
+          Vivo en Manhattan.  En mi tiempo libre, me gusta
+          jugar deporte (voleibol, pickleball, tenis), cantar y tocar la guitarra,
+          y <BlogLink />.
         </p>
       );
 
@@ -80,7 +84,8 @@ const Hobbies = ({ intl }) => {
       return (
         <p>
           我住在曼哈顿。
-          当我有空暇，我喜欢唱歌和弹吉他，打排球和网球，和<BlogLink />。
+          当我有空暇，我喜欢打排球和网球，
+          唱歌和弹吉他，和<BlogLink />。
         </p>
       );
 
