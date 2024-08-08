@@ -66,7 +66,7 @@ const Hobbies = ({ intl }) => {
       return (
         <p>
           I live in Manhattan.  In my free time, I like to play sports
-          (volleyball, pickleball, tennis), make music with friends (guitar, karaoke),
+          (pickleball, volleyball), make music with friends (guitar, karaoke),
           and <BlogLink />.
         </p>
       );
@@ -75,7 +75,7 @@ const Hobbies = ({ intl }) => {
       return (
         <p>
           Vivo en Manhattan.  En mi tiempo libre, me gusta
-          jugar deporte (voleibol, pickleball, tenis), cantar y tocar la guitarra,
+          jugar deporte (pickleball, voleibol), cantar y tocar la guitarra,
           y <BlogLink />.
         </p>
       );
@@ -84,7 +84,7 @@ const Hobbies = ({ intl }) => {
       return (
         <p>
           我住在曼哈顿。
-          当我有空暇，我喜欢打排球和网球，
+          当我有空暇，我喜欢打网球和网球，
           唱歌和弹吉他，和<BlogLink />。
         </p>
       );

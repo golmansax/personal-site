@@ -23,25 +23,27 @@ const SIDE_PROJECTS = [
     slug: 'bookBooster',
     positionSlug: 'cofounder',
   },
-  */
   {
     text: 'Thum.io',
     url: 'https://www.thum.io',
     slug: 'thumIo',
     positionSlug: 'cofounder',
   },
+  */
   {
     text: 'BEAM',
     slug: 'beam',
     url: 'https://www.beammath.org/',
     positionSlug: 'volunteer',
   },
+  /*
   {
     text: 'FirstGeneration',
     url: 'https://www.firstgeneration.vc/',
     slug: 'firstGeneration',
     positionSlug: 'member',
   },
+  */
 ];
 
 const Project = ({ text, url, slug, positionSlug }) => (
