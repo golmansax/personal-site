@@ -2,7 +2,9 @@ import React from 'react';
 import { injectIntl, intlShape } from 'react-intl';
 
 const Federico = () => (
-  <a href='https://www.fedephotography.com/' target='_blank' rel='noopener noreferrer'>Federico Rodriguez Caldentey</a>
+  <a href='https://www.fedephotography.com/' target='_blank' rel='noopener noreferrer'>
+    Federico Rodriguez Caldentey
+  </a>
 );
 
 const Alf = () => (
