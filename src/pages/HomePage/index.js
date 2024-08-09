@@ -8,7 +8,7 @@ import styles from './index.css';
 
 const MAIN_PROJECTS = [
   {
-    text: 'BoostMySchool',
+    text: 'Boost My School',
     url: 'https://www.boostmyschool.com',
     slug: 'boostMySchool',
     positionSlug: 'ceoFounder',
