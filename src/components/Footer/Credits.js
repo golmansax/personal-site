@@ -1,8 +1,8 @@
 import React from 'react';
 import { injectIntl, intlShape } from 'react-intl';
 
-const Justin = () => (
-  <a href='http://jvenezue.la/' target='_blank' rel='noopener noreferrer'>Justin Venezuela</a>
+const Federico = () => (
+  <a href='https://www.fedephotography.com/' target='_blank' rel='noopener noreferrer'>Federico Rodriguez Caldentey</a>
 );
 
 const Alf = () => (
@@ -14,21 +14,21 @@ const Credits = ({ intl }) => {
     case 'en':
       return (
         <small>
-          Credits: photos by <Justin />, icon by <Alf />
+          Credits: photos by <Federico />, icon by <Alf />
         </small>
       );
 
     case 'es':
       return (
         <small>
-          Atribución: las fotos por <Justin />, el icono por <Alf />
+          Atribución: las fotos por <Federico />, el icono por <Alf />
         </small>
       );
 
     case 'zh':
       return (
         <small>
-          致谢：<Justin /> 做的照片，<Alf /> 做的图标
+          致谢：<Federico /> 做的照片，<Alf /> 做的图标
         </small>
       );
 

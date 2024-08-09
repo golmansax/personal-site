@@ -12,7 +12,7 @@ const GivingPage = () => (
   <Page
     head={{
       title: 'My Giving Pledge | Holman Gao',
-      description: 'A little bit about Holman Gao, software engineer turned entrepreneur ' +
+      description: 'A little bit about Holman, software engineer turned CEO & founder ' +
         'living in New York',
     }}
     className={styles.container}

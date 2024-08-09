@@ -29,7 +29,7 @@ const Intro = ({ intl }) => {
     case 'en':
       return (
         <p>
-          Hi! I’m Holman, an entrepeneur with a passion for education.
+          Hi! I’m Holman, CEO & founder with a passion for education.
           Previously I was an engineer at startups, see
           examples of my work on <MyPortfolio />.
         </p>
@@ -38,7 +38,7 @@ const Intro = ({ intl }) => {
     case 'es':
       return (
         <p>
-          ¡Hola! Soy Holman, un emprendedor con pasión por la educación.
+          ¡Hola! Soy Holman, CEO & fundador con pasión por la educación.
           Previamente era ingeniero de software en startups,
           mira a <MyPortfolio /> por ejemplos de mi trabajo.
         </p>
@@ -47,7 +47,7 @@ const Intro = ({ intl }) => {
     case 'zh':
       return (
         <p>
-          你好！我是高鸿鸣，软件背景的创业者。
+          嗨！我是高鸿鸣，软件背景的CEO和创始人。
           去我的<MyPortfolio />如果你想看我做了什么。
         </p>
       );
@@ -67,7 +67,7 @@ const Hobbies = ({ intl }) => {
         <p>
           I live in Manhattan.  In my free time, I like to play sports
           (pickleball, volleyball), make music with friends (guitar, karaoke),
-          and <BlogLink />.
+          and work on <BlogLink />.
         </p>
       );
 
@@ -76,7 +76,7 @@ const Hobbies = ({ intl }) => {
         <p>
           Vivo en Manhattan.  En mi tiempo libre, me gusta
           jugar deporte (pickleball, voleibol), cantar y tocar la guitarra,
-          y <BlogLink />.
+          y trabajar en <BlogLink />.
         </p>
       );
 
@@ -85,7 +85,7 @@ const Hobbies = ({ intl }) => {
         <p>
           我住在曼哈顿。
           当我有空暇，我喜欢打网球和网球，
-          唱歌和弹吉他，和<BlogLink />。
+          唱歌和弹吉他，和努力<BlogLink />。
         </p>
       );
 
