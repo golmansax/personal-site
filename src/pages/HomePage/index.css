@@ -14,7 +14,7 @@
 .leftColumn {
   background: url('./background_inside.jpg') no-repeat;
   background-size: cover;
-  padding-bottom: 61.8%; /* Roughly 1089 / 1762 (aspect-ratio of background.jpg) */
+  padding-bottom: 66.6%;
 }
 
 .tabletHeader {
