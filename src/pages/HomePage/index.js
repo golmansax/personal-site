@@ -87,7 +87,9 @@ const HomePageContent = ({ className }) => (
     </div>
     {SIDE_PROJECTS.length > 0 && (
       <div className={styles.contentSection}>
-        <h4 className={styles.contentSectionHeading}><FormattedMessage id='home.sideProjects' /></h4>
+        <h4 className={styles.contentSectionHeading}>
+          <FormattedMessage id='home.sideProjects' />
+        </h4>
         <div>
           {SIDE_PROJECTS.map((project) => (
             <Project key={project.url} {...project} />
