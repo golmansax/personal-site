@@ -29,14 +29,12 @@ const SIDE_PROJECTS = [
     slug: 'thumIo',
     positionSlug: 'cofounder',
   },
-  */
   {
     text: 'BEAM',
     slug: 'beam',
     url: 'https://www.beammath.org/',
     positionSlug: 'volunteer',
   },
-  /*
   {
     text: 'FirstGeneration',
     url: 'https://www.firstgeneration.vc/',
@@ -87,14 +85,16 @@ const HomePageContent = ({ className }) => (
         ))}
       </div>
     </div>
-    <div className={styles.contentSection}>
-      <h4 className={styles.contentSectionHeading}><FormattedMessage id='home.sideProjects' /></h4>
-      <div>
-        {SIDE_PROJECTS.map((project) => (
-          <Project key={project.url} {...project} />
-        ))}
+    {SIDE_PROJECTS.length > 0 && (
+      <div className={styles.contentSection}>
+        <h4 className={styles.contentSectionHeading}><FormattedMessage id='home.sideProjects' /></h4>
+        <div>
+          {SIDE_PROJECTS.map((project) => (
+            <Project key={project.url} {...project} />
+          ))}
+        </div>
       </div>
-    </div>
+    )}
     <div className={styles.contentSection}>
       <h4 className={styles.contentSectionHeading}>
         <FormattedMessage id='home.portfolioIntro' />
